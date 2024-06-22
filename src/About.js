@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import aboutCompany1 from './assets/img/about-company-1.jpg';
 import aboutCompany2 from './assets/img/about-company-2.jpg';
 import aboutCompany3 from './assets/img/about-company-3.jpg';
@@ -9,25 +10,17 @@ const About = () => {
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p className="who-we-are">Who We Are</p>
-            <h3>Our Story</h3>
-            <p className="fst-italic">
-              Established in 2010, the ERP software company has become a trusted partner
-              for businesses of all sizes in the Raipur region and beyond. With a team of
-              experienced software engineers, business analysts, and industry experts, the
-              company has developed a comprehensive suite of ERP solutions that cater to
-              the unique needs of various industries, including manufacturing, retail, and
-              service-based organizations.
+            <p className="who-we-are">Get to know us:</p>
+            <h2>"We don’t hide, we stand tall in front of challenge"</h2><br/>
+            <p className="fst">
+            The CODEPLAYERS has been one of the most reliable leading software providers for the past 23 years.
             </p>
-            <p className='fst-italic'>
-              The company's commitment to innovation and customer-centric approach has
-              been the driving force behind its success. By continuously investing in research
-              and development, the company has been able to stay ahead of the curve,
-              offering its clients cutting-edge technology and streamlined business
-              processes that improve efficiency, productivity, and ultimately, the bottom line.
-            </p>
-            
-            <a href="#" className="read-more"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
+            <ul>
+              <li><i className="bi bi-check-circle"></i> <span>We give 100% assurance for providing efficient solutions to any problems or complaints you face with our any product.</span></li>
+              <li><i className="bi bi-check-circle"></i> <span>CODEPLAYERS is the blend of following: Development, Design, SEO, Curiosity, Management.</span></li>
+              <li><i className="bi bi-check-circle"></i> <span> Our customer has always given positive feedback about our efficiency and continue to be a part of our fascinating journey of software development.</span></li>
+            </ul>
+            <Link to="/aboutus" className="read-more"><span>Read More</span><i className="bi bi-arrow-right"></i></Link>
           </div>
           <div className="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
             <div className="row gy-4">

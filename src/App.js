@@ -8,8 +8,10 @@ import FeaturedServices from './FeaturedServices';
 import About from './About';
 import Clients from './Clients';
 import Features from './Features';
-import FeaturesDetails from './FeaturesDetails';
-import Services from './Services';
+import Frequently from './Frequently';
+import ServicesPage from './ServicesPage';
+import AboutUsPage from './AboutUsPage';
+import IntegrationsPage from './IntegrationsPage';
 import Footer from './Footer';
 import PricingPage from './PricingPage';
 import Testimonials from './Testimonials';
@@ -19,14 +21,12 @@ import './App.css';
 const Home = () => {
   return (
     <>
-      <Header />
       <HeroSection />
       <FeaturedServices />
       <About />
       <Clients />
       <Features />
-      <FeaturesDetails />
-      <Services />
+      <Frequently />
       <Testimonials />
       <Contact />
       <Footer />
@@ -42,9 +42,13 @@ const App = () => {
 
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="/Integrations" element={<IntegrationsPage />} />
       </Routes>
     </Router>
   );

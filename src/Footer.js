@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from "./assets/img/CodePlayers2.png"
 
 const Footer = () => {
   return (
@@ -7,13 +8,12 @@ const Footer = () => {
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6 footer-about">
             <a href="/" className="logo d-flex align-items-center">
-              <span className="sitename">QuickStart</span>
+              <img src={logo}/>
             </a>
             <div className="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p className="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <p>Headquarters: 191/2, Nand Bhawan, Gandhi Ganj Near Kabootarkhana, Raigarh, Chhattisgarh - 496001 INDIA</p>
+              <p className="mt-3"><strong>Phone:</strong> <span>+91 7582875000</span></p>
+              <p><strong>Email:</strong> <span>codeplayers@outlook.com</span></p>
             </div>
             <div className="social-links d-flex mt-4">
               <a href="/"><i className="bi bi-twitter-x"></i></a>
