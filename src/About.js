@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import aboutCompany1 from './assets/img/about-company-1.jpg';
 import aboutCompany2 from './assets/img/about-company-2.jpg';
 import aboutCompany3 from './assets/img/about-company-3.jpg';
@@ -20,7 +19,7 @@ const About = () => {
               <li><i className="bi bi-check-circle"></i> <span>CODEPLAYERS is the blend of following: Development, Design, SEO, Curiosity, Management.</span></li>
               <li><i className="bi bi-check-circle"></i> <span> Our customer has always given positive feedback about our efficiency and continue to be a part of our fascinating journey of software development.</span></li>
             </ul>
-            <Link to="/aboutus" className="read-more"><span>Read More</span><i className="bi bi-arrow-right"></i></Link>
+            <a href="/AboutUs" className="read-more"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
           </div>
           <div className="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
             <div className="row gy-4">

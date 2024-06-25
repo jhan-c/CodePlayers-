@@ -36,7 +36,7 @@ const Testimonials = () => {
     <section id="testimonials" className="testimonials section">
       <div className="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Hear directly from our customers about their experiences with our products and services.</p>
       </div>
       <div className="container" data-aos="fade-up" data-aos-delay="100">
         <div className="swiper-container init-swiper">

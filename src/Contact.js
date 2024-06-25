@@ -41,7 +41,7 @@ Pune, Maharashtra - 411058 INDIA</span></li>
             <div className="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i className="bi bi-telephone"></i>
               <h3>Call Us</h3>
-              <p>+91 7582875000<br/> +91 7582975000</p>
+              <p>+91 7582875000<br/>+91 7582975000<br/>+91 7354575000</p>
             </div>
           </div>
           {/* End Info Item */}

@@ -36,9 +36,9 @@ const Features = () => {
                 <a
                   className={`nav-link ${activeTab1 === 'features-tab-1' ? 'active show' : ''}`}
                   onClick={() => handleTabClick1('features-tab-1')}
-                  data-bs-toggle="tab"
+                  data-bs-toggle="tab" href="#features-tab-1"
                 >
-                  <i className="bi bi-binoculars"></i>
+                  <i className="bi bi-briefcase"></i>
                   <div>
                     <h4 className="d-none d-lg-block">Simple</h4>
                     <p>
@@ -51,9 +51,9 @@ const Features = () => {
                 <a
                   className={`nav-link ${activeTab1 === 'features-tab-2' ? 'active show' : ''}`}
                   onClick={() => handleTabClick1('features-tab-2')}
-                  data-bs-toggle="tab"
+                  data-bs-toggle="tab" href="#features-tab-2"
                 >
-                  <i className="bi bi-box-seam"></i>
+                  <i className="bi bi-lightbulb"></i>
                   <div>
                     <h4 className="d-none d-lg-block">Intelligent</h4>
                     <p>
@@ -66,9 +66,9 @@ const Features = () => {
                 <a
                   className={`nav-link ${activeTab1 === 'features-tab-3' ? 'active show' : ''}`}
                   onClick={() => handleTabClick1('features-tab-3')}
-                  data-bs-toggle="tab"
+                  data-bs-toggle="tab" href="#features-tab-3"
                 >
-                  <i className="bi bi-brightness-high"></i>
+                  <i className="bi bi-shield-lock"></i>
                   <div>
                     <h4 className="d-none d-lg-block">Secure</h4>
                     <p>
@@ -81,9 +81,9 @@ const Features = () => {
                 <a
                   className={`nav-link ${activeTab1 === 'features-tab-4' ? 'active show' : ''}`}
                   onClick={() => handleTabClick1('features-tab-4')}
-                  data-bs-toggle="tab"
+                  data-bs-toggle="tab" href="#features-tab-4"
                 >
-                  <i className="bi bi-shield-lock"></i>
+                  <i className="bi bi-patch-check"></i>
                   <div>
                     <h4 className="d-none d-lg-block">Reliable</h4>
                     <p>
@@ -94,7 +94,7 @@ const Features = () => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 my-4">
             <div className="tab-content" data-aos="fade-up" data-aos-delay="200">
               <div className={`tab-pane fade ${activeTab1 === 'features-tab-1' ? 'active show' : ''}`} id="features-tab-1">
                 <img src={tab1} alt="Feature 1" className="img-fluid" />
@@ -113,7 +113,7 @@ const Features = () => {
         </div>
 
         <div className="row justify-content-between mt-5">
-          <div className="col-lg-6">
+          <div className="col-lg-6 my-4">
             <div className="tab-content" data-aos="fade-up" data-aos-delay="200">
               <div className={`tab-pane fade ${activeTab2 === 'features-tab-5' ? 'active show' : ''}`} id="features-tab-5">
                 <img src={tab1} alt="Feature 5" className="img-fluid" />
@@ -130,14 +130,14 @@ const Features = () => {
             </div>
           </div>
           <div className="col-lg-5 d-flex align-items-center">
-            <ul className="nav nav-tabs flex-column" data-aos="fade-up" data-aos-delay="100">
+            <ul className="nav nav-tabs flex-column features-list" data-aos="fade-up" data-aos-delay="100">
               <li className="nav-item">
                 <a
                   className={`nav-link ${activeTab2 === 'features-tab-5' ? 'active show' : ''}`}
                   onClick={() => handleTabClick2('features-tab-5')}
-                  data-bs-toggle="tab"
+                  data-bs-toggle="tab" href="#features-tab-5"
                 >
-                  <i className="bi bi-lightbulb"></i>
+                  <i className="bi bi-motherboard"></i>
                   <div>
                     <h4 className="d-none d-lg-block">Utilize Hardware Potential</h4>
                     <p>
@@ -150,9 +150,9 @@ const Features = () => {
                 <a
                   className={`nav-link ${activeTab2 === 'features-tab-6' ? 'active show' : ''}`}
                   onClick={() => handleTabClick2('features-tab-6')}
-                  data-bs-toggle="tab"
+                  data-bs-toggle="tab" href="#features-tab-6"
                 >
-                  <i className="bi bi-graph-up"></i>
+                  <i className="bi bi-window-stack"></i>
                   <div>
                     <h4 className="d-none d-lg-block">Dynamic Application Mechanism</h4>
                     <p>
@@ -165,7 +165,7 @@ const Features = () => {
                 <a
                   className={`nav-link ${activeTab2 === 'features-tab-7' ? 'active show' : ''}`}
                   onClick={() => handleTabClick2('features-tab-7')}
-                  data-bs-toggle="tab"
+                  data-bs-toggle="tab" href="#features-tab-7"
                 >
                   <i className="bi bi-graph-up"></i>
                   <div>
@@ -180,9 +180,9 @@ const Features = () => {
                 <a
                   className={`nav-link ${activeTab2 === 'features-tab-8' ? 'active show' : ''}`}
                   onClick={() => handleTabClick2('features-tab-8')}
-                  data-bs-toggle="tab"
+                  data-bs-toggle="tab" href="#features-tab-8"
                 >
-                  <i className="bi bi-lightbulb"></i>
+                  <i className="bi bi-arrow-up-right-square"></i>
                   <div>
                     <h4 className="d-none d-lg-block">Scalable Upto the Mark</h4>
                     <p>

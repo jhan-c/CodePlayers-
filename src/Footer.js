@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from "./assets/img/CodePlayers2.png"
+import logo from "./assets/img/CodePlayers2.png";
+import footerlogo from './assets/img/CodePlayers.png';
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6 footer-about">
             <a href="/" className="logo d-flex align-items-center">
-              <img src={logo}/>
+              <img src={logo} alt="codeplayers logo"/>
             </a>
             <div className="footer-contact pt-3">
               <p>Headquarters: 191/2, Nand Bhawan, Gandhi Ganj Near Kabootarkhana, Raigarh, Chhattisgarh - 496001 INDIA</p>
@@ -20,28 +21,31 @@ const Footer = () => {
               <a href="/"><i className="bi bi-facebook"></i></a>
               <a href="/"><i className="bi bi-instagram"></i></a>
               <a href="/"><i className="bi bi-linkedin"></i></a>
+              <a href="https://www.youtube.com/@CODEPLAYERSINFINITY"><i className="bi bi-youtube"></i></a>
             </div>
           </div>
 
           <div className="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+            <h4>COMPANY</h4>
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/">About us</a></li>
-              <li><a href="/">Services</a></li>
-              <li><a href="/">Terms of service</a></li>
-              <li><a href="/">Privacy policy</a></li>
+              <li><a href="/AboutUs">About Us</a></li>
+              <li><a href="/Services">Services</a></li>
+              <li><a href="/Pricing">Pricing</a></li>
+              <li><a href="/Integrations">Integrations</a></li>
             </ul>
           </div>
 
           <div className="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
+            <h4>LEGAL</h4>
             <ul>
-              <li><a href="/">Web Design</a></li>
-              <li><a href="/">Web Development</a></li>
-              <li><a href="/">Product Management</a></li>
-              <li><a href="/">Marketing</a></li>
-              <li><a href="/">Graphic Design</a></li>
+              <li><a href="/TermsOfUse">Terms of service</a></li>
+              <li><a href="/PrivacyPolicy">Privacy policy</a></li>
+              <li><a href="/Feedback">Feedback</a></li>
+              <li><a href="/Cookies">Cookies</a></li>
+              <li><a href="/LegalDisclosure">Legal Disclosure</a></li>
+              <li><a href="/EULA">EULA</a></li>
+  
             </ul>
           </div>
 
@@ -59,12 +63,12 @@ const Footer = () => {
       </div>
 
       <div className="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong className="px-1 sitename">QuickStart</strong><span>All Rights Reserved</span></p>
+        <p>© <span>2018 - 2024</span> <strong className="px-1 sitename">Codeplayers Business System Pvt. Ltd.</strong></p>
         <div className="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            <img src={footerlogo} alt="Logo" height={20} width={150}/>
         </div>
       </div>
-      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <a href="/Footer" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     </footer>
   );
 };

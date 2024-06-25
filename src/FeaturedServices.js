@@ -16,7 +16,7 @@ function FeaturedServices() {
           </div>
           <div className="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div className="service-item d-flex">
-              <div className="icon flex-shrink-0"><i className="bi bi-card-checklist"></i></div>
+              <div className="icon flex-shrink-0"><i className="bi bi-laptop"></i></div>
               <div>
                 <h4 className="title"><a href="#" className="stretched-link">Utilize Hardware Potential</a></h4>
                 <p className="description">Newest OS ready..</p>
@@ -25,7 +25,7 @@ function FeaturedServices() {
           </div>
           <div className="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div className="service-item d-flex">
-              <div className="icon flex-shrink-0"><i className="bi bi-bar-chart"></i></div>
+              <div className="icon flex-shrink-0"><i className="bi bi-database-check"></i></div>
               <div>
                 <h4 className="title"><a href="#" className="stretched-link">Large Scale Database</a></h4>
                 <p className="description">Capable of handling large scale database</p>
@@ -34,7 +34,7 @@ function FeaturedServices() {
           </div>
           <div className="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div className="service-item d-flex">
-              <div className="icon flex-shrink-0"><i className="bi bi-gear"></i></div>
+              <div className="icon flex-shrink-0"><i className="bi bi-person-gear"></i></div>
               <div>
                 <h4 className="title"><a href="#" className="stretched-link">Highly Customizable</a></h4>
                 <p className="description">Highly Customizable</p>

@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import 'glightbox/dist/css/glightbox.min.css';
 import './assets/vendor/swiper/swiper-bundle.min.css';
 import './assets/css/main.css';
+import './assets/js/main.js';
 import AOS from 'aos';
 import GLightbox from 'glightbox';
 import Swiper from 'swiper';

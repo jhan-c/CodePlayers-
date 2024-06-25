@@ -1,6 +1,6 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'aos/dist/aos.css';
+import './assets/vendor/bootstrap/css/bootstrap.min.css';
+import './assets/vendor/aos/aos.css';
 import AOS from 'aos';
 
 const Pricing = () => {
@@ -9,76 +9,42 @@ const Pricing = () => {
   }, []);
 
   return (
-    <section id="pricing" className="pricing section">
-      <div className="container section-title" data-aos="fade-up">
-        <br></br>
-        <br></br>
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>
-      
-      <div className="container">
-        <div className="row gy-4">
-          <div className="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div className="pricing-item">
-              <h3>Free Plan</h3>
-              <p className="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <a href="#" className="cta-btn">Start a free trial</a>
-              <p className="text-center small">No credit card required</p>
-              <ul>
-                <li><i className="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i className="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i className="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li className="na"><i className="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li className="na"><i className="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li className="na"><i className="bi bi-x"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li className="na"><i className="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div className="pricing-item featured">
-              <p className="popular">Popular</p>
-              <h3>Business Plan</h3>
-              <p className="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <a href="#" className="cta-btn">Start a free trial</a>
-              <p className="text-center small">No credit card required</p>
-              <ul>
-                <li><i className="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i className="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i className="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i className="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i className="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li><i className="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li className="na"><i className="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-            <div className="pricing-item">
-              <h3>Developer Plan</h3>
-              <p className="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <a href="#" className="cta-btn">Start a free trial</a>
-              <p className="text-center small">No credit card required</p>
-              <ul>
-                <li><i className="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i className="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i className="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i className="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i className="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                <li><i className="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                <li><i className="bi bi-check"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-              </ul>
-            </div>
-          </div>
+    <div className="pricing-container">
+      <div className="container section-title text-center" data-aos="fade-up">
+          <br /><br />
+          <br />
+          <h2>Pricing</h2>
+          <p>Take a perfect strategy for boosting your business.</p>
         </div>
+      <div className="quote-container">
+        <h2 className="quote-title">Request For a Quote</h2>
+        <p className="quote-description">
+          No two companies are the same, and each has different needs and requirements.
+          Thus, with our modular pricing strategy, we enable you to gain a personalized quote
+          taking your account according to the enterprise structure. Complete the form below
+          to get the most beneficial pricing plan for your company.
+        </p>
+        <form className="quote-form">
+          <div className="form-group">
+            <label htmlFor="fullName" class="label">Full Name</label>
+            <input type="text" className="form-control" id="fullName" placeholder="Full Name" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="companyName" class="label">Company Name</label>
+            <input type="text" className="form-control" id="companyName" placeholder="Company Name" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email" class="label">Email</label>
+            <input type="email" className="form-control" id="email" placeholder="Email" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="phone" class="label">Phone</label>
+            <input type="tel" className="form-control" id="phone" placeholder="Phone" required />
+          </div>
+          <a className="btn-getstarted" href="#">Request a Quote Now!</a>
+        </form>
       </div>
-    </section>
+    </div>
   );
 };
 
