@@ -14,6 +14,12 @@ import about3 from './assets/img/About/About3.jpg';
 import about4 from './assets/img/About/About4.jpg';
 import about5 from './assets/img/About/About5.jpg';
 import about6 from './assets/img/About/About6.jpg';
+import about7 from './assets/img/About1/1.png';
+import about8 from './assets/img/About1/2.png';
+import about9 from './assets/img/About1/3.png';
+import about10 from './assets/img/About1/4.png';
+
+const images = [about7, about8, about9, about10];
 
 const AboutUs = () => {
   useEffect(() => {
@@ -24,10 +30,10 @@ const AboutUs = () => {
     <div>
       <section id="about-us" className="about-us section">
         <div className="container section-title" data-aos="fade-up">
-          <br/><br/><br/>
+          <br /><br /><br />
           <h2>About Us</h2>
           <p>Learn more about our company and our dedicated team.</p>
-          <br/><br/>
+          <br /><br />
         </div>
         <div className="container">
           <div className="row gy-4">
@@ -57,14 +63,14 @@ const AboutUs = () => {
             </div>
             <div className="col-lg-6" data-aos="fade-left" style={{ textAlign: 'center' }}>
               <h3><a href="/AboutUs" className="stretched-link">We don’t hide, we stand tall in front of challenge!</a></h3>
-              <br/>
+              <br />
               <p>
                 We give 100% assurance for providing efficient solutions to any problems or complaints you face with any of our products.
                 Any suitable suggestions regarding product alteration and simplification are always welcome.
               </p>
-              <br/><br/>
+              <br /><br />
               <h3><a href="#" className='stretched-link'>We are an India based Company!</a></h3>
-              <br/>
+              <br />
               <p>
                 CODEPLAYERS has been one of the most reliable leading software providers for the past 23 years.
                 Our customers have always given positive feedback about our efficiency and continue to be a part of our fascinating journey of software development.
@@ -72,28 +78,32 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <br/><br/><br/><br/><br/>
+        <br /><br /><br /><br /><br />
         <div className="container">
           <div className="row gy-4" style={{ textAlign: 'center' }}>
             <div className="container section-title" data-aos="fade-up">
               <h2>OUR Methodology and Approach</h2>
             </div>
-            <br/>
-            {[
-              { icon: 'bi bi-search', title: 'Needs Assessment', description: 'The project team thoroughly assesses the client\'s business processes, pain points, and long-term goals to ensure the ERP solution is a perfect fit.' },
-              { icon: 'bi bi-pencil-square', title: 'Solution Design', description: 'The team designs an ERP solution tailored to the client\'s challenges and strategic objectives based on the needs assessment.' },
-              { icon: 'bi bi-gear', title: 'Implementation', description: 'The implementation phase includes ERP installation, data migration, and employee training to ensure a smooth transition.' },
-            ].map(({ icon, title, description }, index) => (
-              <div className="col-xl-4 col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay={(index + 1) * 100} key={title}>
-                <div className="service-item d-flex">
-                  <div className="icon flex-shrink-0 small-icon"><i className={icon}></i></div>
-                  <div>
-                    <h4 className="title"><a href="#" className="stretched-link">{title}</a></h4>
-                    <p className="description">{description}</p>
+            <br />
+            <div className="row justify-content-center">
+              {[
+                { icon: 'bi bi-search', title: 'Needs Assessment', description: 'The project team thoroughly assesses the client\'s business processes, pain points, and long-term goals to ensure the ERP solution is a perfect fit.' },
+                { icon: 'bi bi-pencil-square', title: 'Solution Design', description: 'The team designs an ERP solution tailored to the client\'s challenges and strategic objectives based on the needs assessment.' },
+                { icon: 'bi bi-gear', title: 'Implementation', description: 'The implementation phase includes ERP installation, data migration, and employee training to ensure a smooth transition.' },
+              ].map(({ icon, title, description }, index) => (
+                <div className="col-xl-4 col-lg-4 col-md-6 mb-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay={(index + 1) * 100} key={title}>
+                  <div className="service-item d-flex flex-column p-4 rounded shadow" style={{ background: '#fff', transition: 'transform 0.3s' }}
+                    onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}>
+                    <div className="icon flex-shrink-0 small-icon mb-3" style={{ fontSize: '2rem', color: '#61dafb' }}><i className={icon}></i></div>
+                    <div className="flex-grow-1">
+                      <h4 className="title" style={{ color: '#333' }}>{title}</h4>
+                      <p className="description" style={{ color: '#666' }}>{description}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -101,24 +111,38 @@ const AboutUs = () => {
       <section id="features-details" className="features-details section">
         <div className="container">
           <div className="row gy-4 justify-content-between features-item" style={{ textAlign: 'center' }}>
-            <div className="container section-title" data-aos="fade-up" style={{padding: '0px 12px 20px'}}>
+            <div className="container section-title" data-aos="fade-up" style={{ padding: '0px 12px 20px' }}>
               <h2>STRATEGIES</h2>
             </div>
-            <div className="row gy-4 justify-content-center features-item" style={{padding: '0px-0px 0px'}} >
-              {[
-                { title: 'Needs Assessment and Solution Design', description: 'The project team spends the first two months understanding the client\'s requirements and designing a tailored ERP solution.' },
-                { title: 'Data Migration and Integration', description: 'Data migration and integration with client legacy systems takes an additional three months, ensuring accuracy and reliability in the new ERP system.' },
-                { title: 'Software Implementation and configuration', description: 'ERP software installation and configuration takes four months, with close collaboration for seamless implementation.' },
-                { title: 'User training and Go-Live', description: 'The final project phase includes user training and ERP system go-live, completed in about one month.' },
-              ].map(({ title, description }, index) => (
-                <div className="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay={(index + 1) * 100} key={title}>
-                  <div className="content d-flex flex-column justify-content-center">
-                    <h4>{title}</h4>
-                    <br/>
-                    <p>{description}</p>
+          </div>
+          <div className="row gy-4 justify-content-center">
+            <div className="col-lg-6" data-aos="fade-up">
+              <div className="row gy-4">
+                {images.map((image, index) => (
+                  <div className="col-lg-6 mb-4" key={index}>
+                    <div className="card h-100 border-0 shadow-sm">
+                      <img src={image} alt={`Strategy ${index + 1}`} className="card-img-top" style={{ height: '325px', objectFit: 'cover', borderRadius: '8px' }} />
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+            <div className="col-lg-6" data-aos="fade-up">
+              <div className="row gy-4">
+                {[
+                  { title: 'Needs Assessment and Solution Design', description: 'The project team spends the first two months understanding the client\'s requirements and designing a tailored ERP solution.' },
+                  { title: 'Data Migration and Integration', description: 'Data migration and integration with client legacy systems takes an additional three months, ensuring accuracy and reliability in the new ERP system.' },
+                  { title: 'Software Implementation and configuration', description: 'ERP software installation and configuration takes four months, with close collaboration for seamless implementation.' },
+                  { title: 'User training and Go-Live', description: 'The final project phase includes user training and ERP system go-live, completed in about one month.' },
+                ].map(({ title, description }, index) => (
+                  <div className="col-lg-12" key={index}>
+                    <div className="content p-4 rounded" style={{ background: '#f8f9fa', border: '1px solid #e9ecef', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)' }}>
+                      <h4 style={{ color: '#388da8', fontWeight: '600', textAlign: 'center' }}>{title}</h4>
+                      <p style={{ color: '#6c757d', textAlign: 'center' }}>{description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

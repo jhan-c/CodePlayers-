@@ -12,15 +12,17 @@ const Footer = () => {
               <img src={logo} alt="codeplayers logo"/>
             </a>
             <div className="footer-contact pt-3">
-              <p>Headquarters: 191/2, Nand Bhawan, Gandhi Ganj Near Kabootarkhana, Raigarh, Chhattisgarh - 496001 INDIA</p>
+              <p>Headquarters:
+                    C24-25, Sector 5, Devendra Nagar,
+                    Raipur, CG. 492001.</p>
               <p className="mt-3"><strong>Phone:</strong> <span>+91 7582875000</span></p>
               <p><strong>Email:</strong> <span>codeplayers@outlook.com</span></p>
             </div>
             <div className="social-links d-flex mt-4">
-              <a href="/"><i className="bi bi-twitter-x"></i></a>
+              <a href="https://x.com/Codeplayers_in"><i className="bi bi-twitter-x"></i></a>
               <a href="/"><i className="bi bi-facebook"></i></a>
-              <a href="/"><i className="bi bi-instagram"></i></a>
-              <a href="/"><i className="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/codeplayers.in/"><i className="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/codeplayers-business-system-private-limited/"><i className="bi bi-linkedin"></i></a>
               <a href="https://www.youtube.com/@CODEPLAYERSINFINITY"><i className="bi bi-youtube"></i></a>
             </div>
           </div>

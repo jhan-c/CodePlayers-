@@ -163,3 +163,4 @@ const FeaturesDetails = () => {
 };
 
 export default FeaturesDetails;
+

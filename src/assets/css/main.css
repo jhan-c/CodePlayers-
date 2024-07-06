@@ -1256,9 +1256,9 @@ section,
 
 .clients .client-logo img {
   padding: 20px 40px;
-  max-width: 100%;
+  max-width: 90%;
   transition: 0.3s;
-  opacity: 0.6;
+  opacity: 0.5;
   filter: grayscale(100);
 }
 
@@ -1272,6 +1272,7 @@ section,
     padding: 20px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Features Section
@@ -1361,6 +1362,94 @@ section,
     margin: 10px; /* Add some margin around each feature */
   }
 }
+
+/*--------------------------------------------------------------
+# Circular Progress Section
+--------------------------------------------------------------*/
+.circular-progress-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem; 
+}
+
+.circular-progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.circular-progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.circular-progress svg {
+  transform: rotate(-90deg);
+}
+
+.circular-progress .circle-bg {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 4;
+}
+
+.circular-progress .circle {
+  fill: none;
+  stroke: url(#gradient);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 440;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.circular-progress .circle-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  fill: #333;
+}
+
+.circular-progress .progress-text {
+  font-size: 1rem;
+  fill: #666;
+}
+
+.circular-progress .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .circular-progress-container {
+    width: 45%;
+  }
+
+  .circular-progress {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .circular-progress-container {
+    width: 100%;
+  }
+
+  .circular-progress {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
 
 
 /*--------------------------------------------------------------
@@ -1486,7 +1575,6 @@ section,
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
-/* src/Pricing.css */
 
 .pricing-container {
   text-align: center;
@@ -1844,6 +1932,78 @@ section,
     transform: scale(1.12);
   }
 }
+
+/*--------------------------------------------------------------
+# Career Section
+--------------------------------------------------------------*/
+.job-application-container {
+  padding: 50px 20px; /* Adjust padding to match pricing page */
+  text-align: center; /* Center align content */
+  font: var(--default-font);
+}
+
+.job-application-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px; /* Increase padding for spacing */
+  background-color: #f9f9f9; /* Match background color */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s;
+}
+
+.job-application-form .form-group {
+  margin-bottom: 20px; /* Increase margin-bottom for spacing */
+  text-align: left; /* Align labels to the left */
+}
+
+.job-application-form .form-group .label {
+  display: block; /* Ensure labels take full width */
+  margin-bottom: 5px; /* Add space below labels */
+}
+
+.job-application-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.job-application-form .form-check-input {
+  margin-top: 0;
+}
+
+.job-application-form .form-check-label {
+  display: flex;
+  align-items: center;
+}
+
+.job-application-form .btn-getstarted {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 25px;
+  margin: 20px 0; /* Adjust margin for spacing */
+  border-radius: 50px;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 200px;
+  border: 0;
+}
+
+.job-application-form .btn-getstarted:hover,
+.job-application-form .btn-getstarted:focus {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.job-application-form p {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
 
 /*--------------------------------------------------------------
 # Contact Section

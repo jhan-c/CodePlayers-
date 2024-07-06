@@ -9,6 +9,7 @@ import FeaturedServices from './FeaturedServices';
 import About from './About';
 import Clients from './Clients';
 import Features from './Features';
+import CircularProgressGroup from './CircularProgressGroup';
 import Frequently from './Frequently';
 import ServicesPage from './ServicesPage';
 import AboutUsPage from './AboutUsPage';
@@ -17,6 +18,7 @@ import Footer from './Footer';
 import PricingPage from './PricingPage';
 import Testimonials from './Testimonials';
 import Contact from "./Contact";
+import JobApplication from './JobApplicationForm';
 import TermsOfUse from './TermsOfUse';
 import PrivacyPolicy from './PrivacyPolicy';
 import Feedback from './Feedback';
@@ -33,6 +35,7 @@ const Home = () => {
       <About />
       <Clients />
       <Features />
+      <CircularProgressGroup />
       <Frequently />
       <Testimonials />
       <Contact />
@@ -57,6 +60,7 @@ const App = () => {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/aboutus" element={<AboutUsPage />} />
         <Route path="/Integrations" element={<IntegrationsPage />} />
+        <Route path="/JobApplicationForm" element={<JobApplication />} />
         <Route path="/TermsOfUse" element={<TermsOfUse />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/Feedback" element={<Feedback />} />

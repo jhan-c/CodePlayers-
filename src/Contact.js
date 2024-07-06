@@ -18,21 +18,21 @@ const Contact = () => {
               <i className="bi bi-geo-alt"></i>
               <h3>Address</h3>
               <p>
-              <ul>
-              <li> <span>Headquarters:
-191/2, Nand Bhawan, Gandhi Ganj
-Near Kabootarkhana,
-Raigarh, Chhattisgarh - 496001 INDIA</span></li>
-              <li> <span>Regional Office:
-C-7 Samta Colony,
-Near Radhakrishna Temple,
-Raipur, Chhattisgarh - 492001 INDIA</span></li>
-              <li> <span>Development Centre:
-B-806 Nirman Landmark,
-Wajre,
-Pune, Maharashtra - 411058 INDIA</span></li>
-            </ul>
-            </p>
+                <ul>
+                  <li><span>Headquarters:
+                    C24-25, Sector 5, Devendra Nagar,
+                    Raipur, CG. 492001.
+                  </span></li>
+                  <li><span>Regional Office:
+                    191/2, Nand Bhawan, Gandhi Ganj,
+                    Raigarh, CG, 492001.
+                  </span></li>
+                  <li><span>Development Centre:
+                    F8, Jupiter Block, Regency Magnum,
+                    Hennur Main road, Kalyan Nagar,
+                    Bengaluru, 560043.</span></li>
+                </ul>
+              </p>
             </div>
           </div>
           {/* End Info Item */}
@@ -51,6 +51,7 @@ Pune, Maharashtra - 411058 INDIA</span></li>
               <i className="bi bi-envelope"></i>
               <h3>Email Us</h3>
               <p>codeplayers@outlook.com</p>
+              <p>codeplayers.infinity@outlook.com</p>
             </div>
           </div>
           {/* End Info Item */}
@@ -59,7 +60,7 @@ Pune, Maharashtra - 411058 INDIA</span></li>
         <div className="row gy-4 mt-1">
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118983.61530444604!2d81.53667096946165!3d21.262045510904727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf387ad3d7d7d1eb%3A0xa51559444dfec0b9!2sCODEPLAYERS%20Business%20System%20Private%20Limited!5e0!3m2!1sen!2sus!4v1719551189041!5m2!1sen!2sus"
               frameBorder="0"
               style={{ border: 0, width: '100%', height: '400px' }}
               allowFullScreen=""
