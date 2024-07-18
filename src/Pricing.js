@@ -15,7 +15,7 @@ const Pricing = () => {
           <br />
           <h2>Pricing</h2>
           <p>Take a perfect strategy for boosting your business.</p>
-        </div>
+      </div>
       <div className="quote-container">
         <h2 className="quote-title">Request For a Quote</h2>
         <p className="quote-description">

@@ -4,6 +4,8 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import Header from './Header';
 import Footer from './Footer';
+import animation from "../src/assets/img/hero-services-img.png";
+import background from "../src/assets/img/hero-bg-light.webp";
 
 // Form validation schema
 const schema = yup.object().shape({
@@ -25,6 +27,27 @@ const schema = yup.object().shape({
   terms: yup.bool().oneOf([true], 'Terms & Conditions must be accepted'),
   captcha: yup.string().required('Captcha is required').oneOf(['1'], 'Incorrect captcha'),
 });
+
+function HeroSection() {
+  return (
+    <section id="hero" className="hero section">
+      <div className="hero-bg">
+        <img src={background} alt="background image" />
+      </div>
+      <div className="container text-center">
+        <div className="d-flex flex-column justify-content-center align-items-center">
+        <img src={animation} className="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300" />
+          <h1 data-aos="fade-up">"Empower your business with innovative ERP from <span>CodePlayers"</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100">Choose a powerful ERP for your Enterprise</p>
+          <div className="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" className="btn-get-started">Request a demo</a>
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 const JobApplicationForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm({

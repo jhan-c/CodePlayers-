@@ -3,6 +3,9 @@ import './assets/vendor/swiper/swiper-bundle.min.css';
 import Swiper from 'swiper/bundle';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import image1 from './assets/img/testimonials/testimonials-1.jpg';
+import image2 from './assets/img/testimonials/testimonials-2.jpg';
+import image3 from './assets/img/testimonials/testimonials-3.jpg';
 
 const Testimonials = () => {
   useEffect(() => {
@@ -46,13 +49,13 @@ const Testimonials = () => {
                 <div className="stars">
                   <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
                 </div>
-                <h2>"They are the best"</h2>
                 <p>
-                    Codeplayers has been providing SchoolPro in our school since 2016. We found it very helpful in finding solutions to all major and minor problems such as attendance, admission, fee or transport. All the modules have unique and specific features which ultimately save time and help us to be more advanced through technology. I wish all the very best to Codeplayers team and hope that you will be the ‘One stop solution’ for digital education in future.
+                "Implementing CodePlayers Pvt Ltd's ERP system has been a game-changer for us. The extensive functionalities, combined with excellent customization options and reliable support, have greatly enhanced our efficiency. We strongly recommend their ERP system."
                 </p>
                 <div className="profile mt-auto">
-                  <h3>Shakti Agrawal</h3>
-                  <h4>Director DPS</h4>
+                  <img src={image1} class="testimonial-img" alt=""/>
+                  <h3>Shri Nimish Gadodia</h3>
+                  <h4>Managing Director<br /> Navdurga Group & Scan Group of Companies</h4>
                 </div>
               </div>
             </div>
@@ -61,13 +64,28 @@ const Testimonials = () => {
                 <div className="stars">
                   <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
                 </div>
-                <h2>Infinity ERP and nothing else!</h2>
                 <p>
-                    Infinity Erp. is like a data matrix for us. It has made it easier for us to gather all the information in one place. The insights that the software provides us has helped us in targeting the correct audience by expanding our marketing strategy. Codeplayer’s restaurant management system has also assisted us in managing our inventory more efficiently and control the overall restaurant management cost.  I have always recommended Codeplayer’s for their proactive services.
+                  "We are thrilled with the Infinity ERP system. It stands out with comprehensive features, an intuitive interface, and valuable customization options. Their robust support and proven success ensure smooth operations and enhanced productivity. We highly recommend their ERP solution for any organization looking to improve efficiency."
                 </p>
                 <div className="profile mt-auto">
-                  <h3>Shikhar Agrawal</h3>
-                  <h4>Owner RK Entertainments</h4>
+                  <img src={image2} class="testimonial-img" alt=""/>
+                  <h3>Shri Sparsh Goel</h3>
+                  <h4>Director<br /> Hector Pipes</h4>
+                </div> 
+              </div>
+            </div>
+            <div className="swiper-slide">
+              <div className="testimonial-item">
+                <div className="stars">
+                  <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  "We chose CodePlayers Pvt Ltd's ERP for its robust features and customization capabilities. The seamless integration into our existing systems and the immediate improvement in productivity have been impressive. Their support is top-notch, making this ERP a fantastic choice."
+                </p>
+                <div className="profile mt-auto">
+                  <img src={image3} class="testimonial-img" alt=""/>
+                  <h3>Shri Aman Agrawal</h3>
+                  <h4>Director<br />Vedanta Washery & Logistics Private Limited</h4>
                 </div>
               </div>
             </div>
@@ -76,28 +94,13 @@ const Testimonials = () => {
                 <div className="stars">
                   <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
                 </div>
-                <h2>Nothing More Simplified...</h2>
                 <p>
-                    “Implementation of Infinity Erp. Hotel Software has improved various operational aspects in our hotel and has enhanced the management reporting system too. ''We are much satisfied with Codeplayer’s user-friendly software and their instant services.”Most importantly, its 24/7 physical and online support makes Codeplayer’s special.”
+                  "CodePlayers Pvt Ltd's ERP system has revolutionized our operations. The user friendly design and powerful features have streamlined our processes, while their exceptional support team ensures we always have the help we need. We highly recommend their ERP solution."
                 </p>
                 <div className="profile mt-auto">
-                  <h3>Manoj Agrawal</h3>
-                  <h4>Owner Hotel Pathik</h4>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="testimonial-item">
-                <div className="stars">
-                  <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
-                </div>
-                <h2>"Thankyou CodePlayers"</h2>
-                <p>
-                    Infinity Erp. provides better control of what’s happening at our QSR.  I like the Anti-theft dashboard the most, it is easy to use. It has allowed us to swiftly open the dashboard and access the total sales made from anywhere. We can now classify the risks and monitor any suspicious bill alterations conveniently. My experience with Codeplayers has been really great.
-                </p>
-                <div className="profile mt-auto">
-                  <h3>Manoj Bansal</h3>
-                  <h4>Galaxy The Mall</h4>
+                  <img src={image3} class="testimonial-img" alt=""/>
+                  <h3>Shri Bhupesh Gupta</h3>
+                  <h4>Managing Director<br />Cauvery Iron & Steel (India) Limited</h4>
                 </div>
               </div>
             </div>

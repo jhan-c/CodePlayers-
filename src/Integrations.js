@@ -51,8 +51,8 @@ const FeaturesDetails = () => {
             <div className="content">
               <h3>Accounting Integrations</h3>
               <ul>
-                <li><i className="bi bi-check-circle"></i> <span>Push your Vouchers into the Tally Accounting software with ease.</span></li>
-                <li><i className="bi bi-check-circle"></i> <span>Save time and eliminate manual errors then go through with Tax Practitioners for return filling.</span></li>
+                <li><i className="bi bi-check-circle"></i> <span>Push your vouchers into Tally as well as other accounting software with ease.</span></li>
+                <li><i className="bi bi-check-circle"></i> <span> Save time and eliminate manual errors. Easily collaborate with tax practitioners for return filing.</span></li>
               </ul>
             </div>
           </div>
@@ -121,7 +121,7 @@ const FeaturesDetails = () => {
             <div className="content">
               <h3>Attendance Machine Integrations</h3>
               <ul>
-                <li><i className="bi bi-check-circle"></i> <span>Tell your Employees to touch their finger once with attendance machines.</span></li>
+                <li><i className="bi bi-check-circle"></i> <span>Tell your Employees to touch their finger once or use face recognition with attendance machines.</span></li>
                 <li><i className="bi bi-check-circle"></i> <span>Leave rest on us. Do not waste time to prepare salary statement by manual attendance. Easily monitor employee's activity.</span></li>
               </ul>
             </div>

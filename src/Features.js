@@ -38,11 +38,11 @@ const Features = () => {
                   onClick={() => handleTabClick1('features-tab-1')}
                   data-bs-toggle="tab" href="#features-tab-1"
                 >
-                  <i className="bi bi-briefcase"></i>
+                  <i className="bi bi-motherboard"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Simple</h4>
+                    <h4 className="d-none d-lg-block">Streamlined Operations, Maximized Efficiency</h4>
                     <p>
-                      Extensively Simplified User Interface which allows inexperienced people to run ERP conveniently.
+                      Integrate processes into one system, eliminating redundancies, boosting efficiency, reducing costs, and improving productivity.
                     </p>
                   </div>
                 </a>
@@ -53,11 +53,11 @@ const Features = () => {
                   onClick={() => handleTabClick1('features-tab-2')}
                   data-bs-toggle="tab" href="#features-tab-2"
                 >
-                  <i className="bi bi-lightbulb"></i>
+                  <i className="bi bi-sliders2"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Intelligent</h4>
+                    <h4 className="d-none d-lg-block">Seamless Integration</h4>
                     <p>
-                      It analyses the usage of User so as to readjust itself to provide the best User Experience.
+                      Our ERP systems integrate smoothly with your current software and hardware, minimizing operational disruption.
                     </p>
                   </div>
                 </a>
@@ -68,11 +68,11 @@ const Features = () => {
                   onClick={() => handleTabClick1('features-tab-3')}
                   data-bs-toggle="tab" href="#features-tab-3"
                 >
-                  <i className="bi bi-shield-lock"></i>
+                  <i className="bi bi-file-bar-graph"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Secure</h4>
+                    <h4 className="d-none d-lg-block">Real-Time Data for Better Decisions</h4>
                     <p>
-                      Here at CODEPLAYERS security comes first! ERP secure your data for as long as a decade or even more.
+                      Access real-time data and analytics to make quick, informed decisions with accurate, up-to-date information.
                     </p>
                   </div>
                 </a>
@@ -83,11 +83,11 @@ const Features = () => {
                   onClick={() => handleTabClick1('features-tab-4')}
                   data-bs-toggle="tab" href="#features-tab-4"
                 >
-                  <i className="bi bi-patch-check"></i>
+                  <i className="bi bi-graph-up-arrow"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Reliable</h4>
+                    <h4 className="d-none d-lg-block">Scalable Solutions for Growth</h4>
                     <p>
-                      The accuracy of ERP is incomparable. Our product comes up with NIL data corruption possibility.
+                      Our scalable ERP solutions adapt and expand with your business, supporting growth and new opportunities.
                     </p>
                   </div>
                 </a>
@@ -137,11 +137,11 @@ const Features = () => {
                   onClick={() => handleTabClick2('features-tab-5')}
                   data-bs-toggle="tab" href="#features-tab-5"
                 >
-                  <i className="bi bi-motherboard"></i>
+                  <i className="bi bi-cash-coin"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Utilize Hardware Potential</h4>
+                    <h4 className="d-none d-lg-block">Proven ROI: Investing in Success</h4>
                     <p>
-                      Our software operates by exploiting the highest potential of the hardware making the most of it.
+                      Investing in our ERP solutions ensures a clear return on investment by enhancing efficiency, reducing costs, and driving business growth.
                     </p>
                   </div>
                 </a>
@@ -152,11 +152,11 @@ const Features = () => {
                   onClick={() => handleTabClick2('features-tab-6')}
                   data-bs-toggle="tab" href="#features-tab-6"
                 >
-                  <i className="bi bi-window-stack"></i>
+                  <i className="bi bi-clock"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Dynamic Application Mechanism</h4>
+                    <h4 className="d-none d-lg-block">24/7 Support</h4>
                     <p>
-                      The proposed mechanism achieves easy compatibility and acquisition feasibility under fluctuating needs.
+                      We offer 24/7 support to keep your ERP system running smoothly. Our dedicated team is always available to assist with any issues or questions.
                     </p>
                   </div>
                 </a>
@@ -167,11 +167,11 @@ const Features = () => {
                   onClick={() => handleTabClick2('features-tab-7')}
                   data-bs-toggle="tab" href="#features-tab-7"
                 >
-                  <i className="bi bi-graph-up"></i>
+                  <i className="bi bi-shield-lock"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">User Level Reports</h4>
+                    <h4 className="d-none d-lg-block">Robust Security Features</h4>
                     <p>
-                      Our ERP assists to view user session reports based on role based access control and track user activities.
+                      Our ERP solutions ensure data protection with encryption, access controls, and regular audits.
                     </p>
                   </div>
                 </a>
@@ -182,11 +182,11 @@ const Features = () => {
                   onClick={() => handleTabClick2('features-tab-8')}
                   data-bs-toggle="tab" href="#features-tab-8"
                 >
-                  <i className="bi bi-arrow-up-right-square"></i>
+                  <i className="bi bi-hand-index"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Scalable Upto the Mark</h4>
+                    <h4 className="d-none d-lg-block">User-Friendly Interface</h4>
                     <p>
-                      We endeavor to serve companies of all sizes to reap the benefits of ERP software.
+                      Our ERP systems offer intuitive designs for easy team adoption, minimizing training and maximizing productivity
                     </p>
                   </div>
                 </a>

@@ -13,10 +13,10 @@ const Footer = () => {
             </a>
             <div className="footer-contact pt-3">
               <p>Headquarters:
-                    C24-25, Sector 5, Devendra Nagar,
-                    Raipur, CG. 492001.</p>
+              C 24-25, Infinity Tower, Sector-5, Devendra Nagar, 
+              Raipur, CG. 492001.</p>
               <p className="mt-3"><strong>Phone:</strong> <span>+91 7582875000</span></p>
-              <p><strong>Email:</strong> <span>codeplayers@outlook.com</span></p>
+              <p><strong>Email:</strong> <span>codeplayers@outlook.com</span> <span>codeplayers.infinity@outlook.com</span></p>
             </div>
             <div className="social-links d-flex mt-4">
               <a href="https://x.com/Codeplayers_in"><i className="bi bi-twitter-x"></i></a>
@@ -33,8 +33,10 @@ const Footer = () => {
               <li><a href="/">Home</a></li>
               <li><a href="/AboutUs">About Us</a></li>
               <li><a href="/Services">Services</a></li>
-              <li><a href="/Pricing">Pricing</a></li>
               <li><a href="/Integrations">Integrations</a></li>
+              <li><a href="/ClientsSection">Clients</a></li>
+              <li><a href="/Pricing">Pricing</a></li>
+              <li><a href="/JobApplicationForm">Career</a></li>
             </ul>
           </div>
 

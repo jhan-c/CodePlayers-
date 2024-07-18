@@ -14,7 +14,16 @@ const Header = () => {
             <li><a href="/" className="active">Home</a></li>
             <li><a href="/Integrations">Integrations</a></li>
             <li><a href="/services">Services</a></li>
+            <li><a href="/ClientsSection">Clients</a></li>
             <li><a href="/pricing">Pricing</a></li>
+            <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+              <li><a href="/Blogs">Blogs</a></li>
+              <li><a href="/CaseStudies">Case Studies</a></li>
+              <li><a href="/Brochure">Brochures</a></li>
+              <li><a href="/TrainingVideos">Video Archive</a></li>
+              </ul>
+            </li>
             <li><a href="/aboutus">About Us</a></li>
             <li><a href="/JobApplicationForm">Career</a></li>
           </ul>
