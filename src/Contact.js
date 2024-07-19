@@ -58,10 +58,10 @@ const Contact = () => {
         </div>
 
         <div className="row gy-4 mt-1">
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div className="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="300">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6253.377079693168!2d81.6513115249436!3d21.260371148634068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd7963c8575d%3A0x58aa9ec58291a46f!2sShayvidz%20CA%20CS%20Academy!5e0!3m2!1sen!2sus!4v1720865671492!5m2!1sen!2sus"
-              width="600"
+              width="100%"
               height="450"
               style={{ border: 0 }}
               allowFullScreen=""
