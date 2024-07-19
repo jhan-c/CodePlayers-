@@ -12,9 +12,8 @@ import client3 from './assets/img/clients/client-3.jpg';
 import client4 from './assets/img/clients/client-4.png';
 import client5 from './assets/img/clients/client-5.png';
 import client6 from './assets/img/clients/client-6.png';
-import zkteco from './assets/img/integration/zkteco.png';
-import essl from './assets/img/integration/essl.jpg';
-import epabx from './assets/img/integration/epabx.png';
+import epabx from './assets/img/integration/epabx.jpg';
+import attendance from './assets/img/integration/attendance.png';
 import secureye from './assets/img/integration/secureye.png';
 
 const FeaturesDetails = () => {
@@ -114,8 +113,7 @@ const FeaturesDetails = () => {
         {/* Features Item */}
         <div className="row gy-4 justify-content-between features-item">
           <div className="col-lg-6 my-5" data-aos="fade-up" data-aos-delay="100"> 
-            <img src={zkteco} className="img-fluid my-4 mx-4" alt="zkteco" width={200} height={500}/>
-            <img src={essl} className="img-fluid" alt="essl" width={200} height={50}/>
+            <img src={attendance} className="img-fluid" alt="Feature 1" />
           </div>
           <div className="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
             <div className="content">
