@@ -41,7 +41,9 @@ const Pricing = () => {
             <label htmlFor="phone" class="label">Phone</label>
             <input type="tel" className="form-control" id="phone" placeholder="Phone" required />
           </div>
-          <a className="btn-getstarted" href="#">Request a Quote Now!</a>
+          <div className="text-center">
+            <button type="submit" className=" btn-getstarted">Request a Quote Now!</button>
+          </div>
         </form>
       </div>
     </div>
