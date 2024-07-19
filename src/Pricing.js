@@ -42,7 +42,7 @@ const Pricing = () => {
             <input type="tel" className="form-control" id="phone" placeholder="Phone" required />
           </div>
           <div className="text-center">
-            <button type="submit" className=" btn-getstarted">Request a Quote Now!</button>
+            <button type="submit" className=" btn-getstarted">submit</button>
           </div>
         </form>
       </div>
