@@ -22,6 +22,16 @@ import about9 from './assets/img/About1/3.jpg';
 import about11 from './assets/img/About1/7.jpg';
 import about12 from './assets/img/About1/6.png';
 
+// Import the team member detail components
+const ArpitAgrawal = '/ArpitAgrawal';
+const UtkarshAgrawal = '/UtkarshAgrawal';
+const ManasAgrawal = '/ManasAgrawal';
+const ManishAgrawal = '/ManishAgrawal';
+const HarshitGoel = '/HarshitGoel';
+const AditiAgrawal = '/AditiAgrawal';
+const IleshThakkar = '/IleshThakkar';
+const RitikaAgrawal = '/RitikaAgrawal';
+
 const AboutUs = () => {
   useEffect(() => {
     AOS.init();
@@ -302,15 +312,15 @@ const AboutUs = () => {
       }}
     >
       {[
-        { name: 'ARPIT AGRAWAL', role: 'Consultant: Business Development', degree: 'M.Tech (IIT Kharagpur)', img: about6 },
-        { name: 'UTKARSH AGRAWAL', role: 'Director: Development & Implementation', degree: 'Founder & CEO', img: about1 },
-        { name: 'MANAS AGRAWAL', role: 'Director: Sales', degree: 'Co-Founder', img: about2 },
-        { name: 'MANISH AGRAWAL', role: 'Consultant: Application\'s Financial Structure', degree: 'FCA', img: about3 },
-        { name: 'HARSHIT GOEL', role: 'Consultant: Application\'s Development', degree: 'B-Tech (Computer Science)', img: about4 },
-        { name: 'ADITI AGRAWAL', role: 'Consultant: Application\'s Development', degree: 'BE (Computer Science)', img: about5 },
-        { name: 'ILESH THAKKAR', role: 'Consultant: Business Development, Implementation and Support', degree: 'Business Head', img: about7},
-        { name: 'RITIKA AGRAWAL', role: 'Consultant: Product & structural design', degree: 'Design Head', img: about71}
-      ].map(({ name, role, degree, img }) => (
+        { name: 'ARPIT AGRAWAL', role: 'Consultant: Business Development', degree: 'M.Tech (IIT Kharagpur)', img: about6 , link: ArpitAgrawal },
+        { name: 'UTKARSH AGRAWAL', role: 'Director: Development & Implementation', degree: 'Founder & CEO', img: about1 , link: UtkarshAgrawal},
+        { name: 'MANAS AGRAWAL', role: 'Director: Sales', degree: 'Co-Founder', img: about2 , link: ManasAgrawal},
+        { name: 'MANISH AGRAWAL', role: 'Consultant: Application\'s Financial Structure', degree: 'FCA', img: about3 , link: ManishAgrawal},
+        { name: 'HARSHIT GOEL', role: 'Consultant: Application\'s Development', degree: 'B-Tech (Computer Science)', img: about4 , link: HarshitGoel},
+        { name: 'ADITI AGRAWAL', role: 'Consultant: Application\'s Development', degree: 'BE (Computer Science)', img: about5 , link: AditiAgrawal},
+        { name: 'ILESH THAKKAR', role: 'Consultant: Business Development, Implementation and Support', degree: 'Business Head', img: about7 , link: IleshThakkar},
+        { name: 'RITIKA AGRAWAL', role: 'Consultant: Product & structural design', degree: 'Design Head', img: about71 , link: RitikaAgrawal}
+      ].map(({ name, role, degree, img, link }) => (
         <SwiperSlide key={name}>
           <div className="testimonial-item">
             <h3>{name}</h3>
@@ -320,6 +330,7 @@ const AboutUs = () => {
             <div className="profile mt-auto">
               <img src={img} className="testimonial-img" alt={name} style={{ width: '250px', height: '250px', objectFit: 'cover', borderRadius: '8px' }} />
             </div>
+            <a href={link} class="read-more stretched-link">know more <i class="bi bi-arrow-right"></i></a>
           </div>
         </SwiperSlide>
       ))}

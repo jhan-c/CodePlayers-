@@ -3048,6 +3048,96 @@ button:hover {
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+
+.TeamMember-container {
+  padding: 20px;
+}
+
+.TeamMember-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.TeamMember-title {
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.TeamMember-subtitle {
+  
+   color: var(--accent-color);
+   font-size: 25px;
+}
+
+.TeamMember-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.TeamMember-image-container {
+  flex: 1;
+  min-width: 200px; /* Ensure the image container doesn't get too small */
+  padding-right: 40px;
+}
+
+.TeamMember-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.TeamMember-text {
+  flex: 2;
+  min-width: 300px; /* Ensure the text container doesn't get too small */
+}
+
+.TeamMember-paragraph {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+/* Media Queries for Responsiveness */
+
+/* For tablets and up */
+@media (max-width: 1024px) {
+  .TeamMember-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .TeamMember-image-container {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .TeamMember-text {
+    min-width: unset;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .TeamMember-container {
+    padding: 10px;
+  }
+
+  .TeamMember-title {
+    font-size: 1.5rem;
+  }
+
+  .TeamMember-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .TeamMember-paragraph {
+    font-size: 0.9rem;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Starter Section Section
+--------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
 }

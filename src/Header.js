@@ -1,37 +1,40 @@
-import React, { useEffect, useCallback } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import logo from './assets/img/CodePlayers.png';
 
 const Header = () => {
-  const location = useLocation();
-
-  const mobileNavToggle = useCallback(() => {
-    const body = document.querySelector('body');
+  useEffect(() => {
+    /**
+     * Mobile nav toggle
+     */
     const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
-    body.classList.toggle('mobile-nav-active');
-    if (mobileNavToggleBtn) {
+    function mobileNavToggle() {
+      document.querySelector('body').classList.toggle('mobile-nav-active');
       mobileNavToggleBtn.classList.toggle('bi-list');
       mobileNavToggleBtn.classList.toggle('bi-x');
     }
-  }, []);
 
-  const attachListeners = useCallback(() => {
-    const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
     if (mobileNavToggleBtn) {
       mobileNavToggleBtn.addEventListener('click', mobileNavToggle);
     }
 
-    document.querySelectorAll('#navmenu a').forEach(navLink => {
-      navLink.addEventListener('click', () => {
+    /**
+     * Hide mobile nav on same-page/hash links
+     */
+    document.querySelectorAll('#navmenu a').forEach(navmenu => {
+      navmenu.addEventListener('click', () => {
         if (document.querySelector('.mobile-nav-active')) {
           mobileNavToggle();
         }
       });
     });
 
-    document.querySelectorAll('.navmenu .toggle-dropdown').forEach(toggle => {
-      toggle.addEventListener('click', function (e) {
+    /**
+     * Toggle mobile nav dropdowns
+     */
+    document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+      navmenu.addEventListener('click', function(e) {
         if (document.querySelector('.mobile-nav-active')) {
           e.preventDefault();
           this.parentNode.classList.toggle('active');
@@ -40,36 +43,27 @@ const Header = () => {
         }
       });
     });
-  }, [mobileNavToggle]);
 
-  const detachListeners = useCallback(() => {
-    const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-    if (mobileNavToggleBtn) {
-      mobileNavToggleBtn.removeEventListener('click', mobileNavToggle);
-    }
-
-    document.querySelectorAll('#navmenu a').forEach(navLink => {
-      navLink.removeEventListener('click', mobileNavToggle);
-    });
-
-    document.querySelectorAll('.navmenu .toggle-dropdown').forEach(toggle => {
-      toggle.removeEventListener('click', function (e) {
-        if (document.querySelector('.mobile-nav-active')) {
-          e.preventDefault();
-          this.parentNode.classList.toggle('active');
-          this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-          e.stopImmediatePropagation();
-        }
-      });
-    });
-  }, [mobileNavToggle]);
-
-  useEffect(() => {
-    attachListeners();
+    // Cleanup event listeners on component unmount
     return () => {
-      detachListeners();
+      if (mobileNavToggleBtn) {
+        mobileNavToggleBtn.removeEventListener('click', mobileNavToggle);
+      }
+      document.querySelectorAll('#navmenu a').forEach(navmenu => {
+        navmenu.removeEventListener('click', mobileNavToggle);
+      });
+      document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+        navmenu.removeEventListener('click', function(e) {
+          if (document.querySelector('.mobile-nav-active')) {
+            e.preventDefault();
+            this.parentNode.classList.toggle('active');
+            this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+            e.stopImmediatePropagation();
+          }
+        });
+      });
     };
-  }, [location, attachListeners, detachListeners]);
+  }, []);
 
   return (
     <header className="header d-flex align-items-center fixed-top">
@@ -79,22 +73,22 @@ const Header = () => {
         </Link>
         <nav id="navmenu" className="navmenu d-flex align-items-center">
           <ul>
-            <li><Link to="/" className="active">Home</Link></li>
-            <li><Link to="/Integrations">Integrations</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/ClientsSection">Clients</Link></li>
-            <li><Link to="/pricing">Pricing</Link></li>
+            <li><a href="/" className="active">Home</a></li>
+            <li><a href="/Integrations">Integrations</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/ClientsSection">Clients</a></li>
+            <li><a href="/pricing">Pricing</a></li>
             <li className="dropdown">
               <a href="#"><span>Resources</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><Link to="/Blogs">Blogs</Link></li>
-                <li><Link to="/CaseStudies">Case Studies</Link></li>
-                <li><Link to="/Brochure">Brochures</Link></li>
-                <li><Link to="/TrainingVideos">Video Archive</Link></li>
+                <li><a href="/Blogs">Blogs</a></li>
+                <li><a href="/CaseStudies">Case Studies</a></li>
+                <li><a href="/Brochure">Brochures</a></li>
+                <li><a href="/TrainingVideos">Video Archive</a></li>
               </ul>
             </li>
-            <li><Link to="/aboutus">About Us</Link></li>
-            <li><Link to="/JobApplicationForm">Career</Link></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/JobApplicationForm">Career</a></li>
           </ul>
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

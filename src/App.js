@@ -45,6 +45,16 @@ import InternalServerError from './InternalServerError';
 import ClientsSection from './ClientsSection';
 import './App.css';
 
+// Import the team member detail components
+import ArpitAgrawal from './ArpitAgrawal';
+import UtkarshAgrawal from './UtkarshAgrawal';
+import ManasAgrawal from './ManasAgrawal';
+import ManishAgrawal from './ManishAgrawal';
+import HarshitGoel from './HarshitGoel';
+import AditiAgrawal from './AditiAgrawal';
+import IleshThakkar from './IleshThakkar';
+import RitikaAgrawal from './RitikaAgrawal';
+
 const Home = () => {
   return (
     <>
@@ -102,6 +112,14 @@ const App = () => {
         <Route path="/LegalDisclosure" element={<LegalDisclosure />} />
         <Route path="/EULA" element={<EULA />} />
         <Route path="/500" element={<InternalServerError />} />
+        <Route path="/ArpitAgrawal" element={<ArpitAgrawal />} />
+        <Route path="/UtkarshAgrawal" element={<UtkarshAgrawal />} />
+        <Route path="/ManasAgrawal" element={<ManasAgrawal />} />
+        <Route path="/ManishAgrawal" element={<ManishAgrawal />} />
+        <Route path="/HarshitGoel" element={<HarshitGoel />} />
+        <Route path="/AditiAgrawal" element={<AditiAgrawal />} />
+        <Route path="/IleshThakkar" element={<IleshThakkar />} />
+        <Route path="/RitikaAgrawal" element={<RitikaAgrawal />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
