@@ -3041,7 +3041,6 @@ button:hover {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  filter: blur(5px);
 }
 
 
