@@ -1,9 +1,7 @@
 import React from 'react';
-import Footer from './Footer';
 
 const blog1 = () => {
     return (
-        <>
         <div className="blog-content">
             <h1>The Future of ERP: Trends to Watch</h1>
             <p>
@@ -35,8 +33,6 @@ const blog1 = () => {
                 more vital in driving efficiency and innovation.
             </p>
         </div>
-        <Footer />
-        </>
     );
 };
 

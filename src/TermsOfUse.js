@@ -1,11 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 
 const TermsOfUse = () => {
   return (
     <>
-    <Header />
     <br/><br/><br/><br/><br/>
     <div className="terms-of-use container mt-4">
       <h1>Terms of Use for www.codeplayers.in, api.codeplayers.in</h1><hr/>
@@ -123,7 +120,6 @@ const TermsOfUse = () => {
       </p>
     </div>
     <br/><br/><br/><br/><br/>
-    <Footer />
     </>
   );
 }

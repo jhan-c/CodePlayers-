@@ -1,11 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 
 const PrivacyPolicy = () => {
   return (
     <>
-    <Header />
     <br/><br/><br/><br/><br/>
     <div className="privacy-policy container mt-4">
       <h1>Privacy Policy</h1><hr/>
@@ -61,7 +58,6 @@ const PrivacyPolicy = () => {
       <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us by emailing at <a href="mailto:admin@codeplayers.in">admin@codeplayers.in</a></p>
     </div>
     <br/><br/><br/><br/><br/>
-    <Footer />
     </>
   );
 };

@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 const blog2 = () => {
     return (
@@ -38,7 +37,6 @@ const blog2 = () => {
                 for driving growth and success.
             </p>
         </div>
-        <Footer />
         </>
     );
 };

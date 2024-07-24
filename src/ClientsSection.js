@@ -17,22 +17,16 @@ import sunil from './assets/img/ClientsSection/sunil.jpg';
 import jewellary from './assets/img/ClientsSection/jewellary.jpg';
 import ganesh from './assets/img/ClientsSection/ganesh.jpeg';
 import ks from './assets/img/ClientsSection/ks.jpeg';
-import Footer from './Footer';
-import Header from './Header';
-
 
 
 const Clients = () => {
   return (
-    <>
-    <Header />
-    <div className="container section-title text-center" data-aos="fade-up">
-        <br /><br />
+    <section id="services" class="services section">
+      <div className="container section-title text-center" data-aos="fade-up">
         <br /><br />
         <h2>Our Clients</h2>
         <p>Our valued clients drive our success.<br /> Meet some of our esteemed partners and clients.</p>
-    </div>
-    <section id="services" class="services section">
+      </div>
       <div class="container section-title" data-aos="fade-up">
       </div>
       <div class="container">
@@ -235,20 +229,9 @@ const Clients = () => {
             </div>
           </div>
 
-          
-
         </div>
-
       </div>
-
     </section>
-
-
-      
-      
-     
-    <Footer/>
-    </>
   );
 };
 

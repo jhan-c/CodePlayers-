@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import GLightbox from 'glightbox';
 import 'glightbox/dist/css/glightbox.css';
 import link from './assets/img/youtubePlaybutton.jpg';
-import Footer from './Footer';
 
 const videos = [
     {
@@ -34,7 +33,6 @@ const TrainingVideos = () => {
     }, []);
 
     return (
-        <>
         <div className="videos-page">
             <div className="container section-title text-center" data-aos="fade-up">
                 <br /><br />
@@ -63,8 +61,6 @@ const TrainingVideos = () => {
                 ))}
             </div>
         </div>
-        <Footer />
-        </>
     );
 };
 

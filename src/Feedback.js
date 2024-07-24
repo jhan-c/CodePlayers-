@@ -1,11 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 
 const Feedback = () => {
   return (
     <>
-    <Header />
     <br/><br/><br/><br/><br/>
     <div className="feedback container mt-4">
       <h1>Feedback</h1><hr/>
@@ -18,7 +15,6 @@ const Feedback = () => {
         Email: <a href="mailto:codeplayers@outlook.com">codeplayers@outlook.com</a>
       </address>
     </div>
-    <Footer />
     </>
   );
 };

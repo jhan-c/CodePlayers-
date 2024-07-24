@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 const brochures = [
     {
@@ -16,7 +15,6 @@ const brochures = [
 
 const BrochurePage = () => {
     return (
-        <>
         <div className="brochure-page">
           <br/><br/>
           <br/>
@@ -33,8 +31,6 @@ const BrochurePage = () => {
                 ))}
             </div>
         </div>
-        <Footer />
-        </>
     );
 };
 

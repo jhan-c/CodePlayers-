@@ -82,10 +82,6 @@ h6 {
   z-index: 997;
 }
 
-.header .navmenu{
-  font-size: 100px;
-}
-
 .header .logo {
   line-height: 1;
 }
@@ -95,15 +91,9 @@ h6 {
   margin-right: 8px;
 }
 
-
 @media (max-width: 480px) {
-  .header {
-    padding: 0px;
-    max-height: 80px;
-  }
-  
   .header .logo img {
-    max-height: 20px;
+    max-height: 24px;
   }
 }
 
@@ -125,10 +115,6 @@ h6 {
 }
 
 @media (max-width: 1200px) {
-  .header{
-    max-height: 90px;
-  }
-
   .header .logo {
     order: 1;
   }
@@ -136,7 +122,7 @@ h6 {
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
-    padding: 6px 10px;
+    padding: 6px 15px;
   }
 
   .header .navmenu {
@@ -146,64 +132,6 @@ h6 {
 
 .scrolled .header {
   box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
-
-/*--------------------------------------------------------------
-# Login page
---------------------------------------------------------------*/
-
-.facebook {
-    font-weight: bold;
-    font-size: 3.5em;
-    font-family: "Poppins", sans-serif;
-    color: #1877f2;
-}
-
-.text-description {
-    font-weight: normal;
-    font-size: 1.4em;
-    font-family: "Poppins", sans-serif;
-}
-
-.bg-gray {
-    background-color: var(--background-color);
-}
-
-.btn-primary {
-    background-color: #1877f2 !important;
-}
-
-.btn-success {
-    background-color: #42b72a !important;
-}
-
-input::placeholder {
-    color: rgb(190, 186, 186) !important;
-    font-size: 0.8em;
-
-}
-
-.btn-h-primary:hover {
-    background-color: #096ae8 !important;
-}
-
-.btn-h-success:hover {
-    background-color: #309f1a !important;
-}
-
-/* Index Page Header
-------------------------------*/
-.index-page .header {
-  --background-color: rgba(255, 255, 255, 0);
-}
-
-/* Index Page Header on Scroll
-------------------------------*/
-.index-page.scrolled .header {
-  --background-color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -253,7 +181,7 @@ input::placeholder {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -292,11 +220,11 @@ input::placeholder {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -308,7 +236,7 @@ input::placeholder {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -341,7 +269,7 @@ input::placeholder {
   }
 
   .navmenu .megamenu ul li a,
-  .navmenu .megamenu ul li:hover>a {
+  .navmenu .megamenu ul li:hover > a {
     padding: 10px 20px;
     font-size: 15px;
     color: var(--nav-dropdown-color);
@@ -353,7 +281,7 @@ input::placeholder {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .megamenu:hover>ul {
+  .navmenu .megamenu:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -362,17 +290,6 @@ input::placeholder {
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 30px;
-  }
-
-  .sign-in-button {
-    margin-right: 10px;
-  }
-
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -380,8 +297,6 @@ input::placeholder {
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
-    display: flex;
-    align-items: center;
   }
 
   .navmenu {
@@ -467,7 +382,7 @@ input::placeholder {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -485,6 +400,7 @@ input::placeholder {
     margin-right: 0;
     z-index: 9999;
   }
+
   .mobile-nav-active .navmenu {
     position: fixed;
     overflow: hidden;
@@ -493,10 +409,54 @@ input::placeholder {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
+
+/*--------------------------------------------------------------
+# Login page
+--------------------------------------------------------------*/
+
+.facebook {
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: "Poppins", sans-serif;
+    color: #1877f2;
+}
+
+.text-description {
+    font-weight: normal;
+    font-size: 1.4em;
+    font-family: "Poppins", sans-serif;
+}
+
+.bg-gray {
+    background-color: var(--background-color);
+}
+
+.btn-primary {
+    background-color: #1877f2 !important;
+}
+
+.btn-success {
+    background-color: #42b72a !important;
+}
+
+input::placeholder {
+    color: rgb(190, 186, 186) !important;
+    font-size: 0.8em;
+
+}
+
+.btn-h-primary:hover {
+    background-color: #096ae8 !important;
+}
+
+.btn-h-success:hover {
+    background-color: #309f1a !important;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -3044,6 +3004,44 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+/*--------------------------------------------------------------
+# College and Certificate section in Career Page
+--------------------------------------------------------------*/
+.college-item, .certificate-item {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.college-item:hover, .certificate-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.college-img {
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.certificate-item {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certificate-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  filter: blur(5px);
 }
 
 

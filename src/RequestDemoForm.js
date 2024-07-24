@@ -2,8 +2,6 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import Header from './Header';
-import Footer from './Footer';
 
 // Form validation schema
 const schema = yup.object().shape({
@@ -11,6 +9,7 @@ const schema = yup.object().shape({
   position: yup.string().required('Position is required'),
   companyName: yup.string().required('Company Name is required'),
   mobileNumber: yup.string().required('Mobile No. is required').matches(/^[0-9]+$/, 'Must be only digits').min(10, 'Must be exactly 10 digits').max(10, 'Must be exactly 10 digits'),
+  referralSource: yup.string().required('Referral source is required'),
 });
 
 const DemoRequestForm = () => {
@@ -18,14 +17,31 @@ const DemoRequestForm = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch('https://api.codeplayers.in', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        // Optionally, you can show a success message to the user here
+      } else {
+        console.error('Error submitting the form');
+        // Optionally, you can show an error message to the user here
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Optionally, you can show an error message to the user here
+    }
   };
 
   return (
-    <>
-      <Header />
-      <br /><br /><br /><br />
+      <>
+      <br /><br /><br />
       <div className="demo-request-container my-3 mx-3">
         <div className="content">
           <div className='paragraph-section'>
@@ -73,8 +89,7 @@ const DemoRequestForm = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+      </>
   );
 };
 

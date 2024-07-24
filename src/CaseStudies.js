@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 import case_study1 from "./assets/img/Case_Studies/dps.jpeg"
 import case_study2 from "./assets/img/Case_Studies/jt.png"
@@ -45,7 +44,6 @@ const blogs = [
 
 const BlogPage = () => {
     return (
-        <>
         <div className="blog-page">
           <br/><br/>
           <br/>
@@ -64,8 +62,6 @@ const BlogPage = () => {
                 ))}
             </div>
         </div>
-        <Footer />
-        </>
     );
 };
 

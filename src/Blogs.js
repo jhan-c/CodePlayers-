@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 import image1 from './assets/img/Blogs/blog_image1.jpg'
 import image2 from './assets/img/Blogs/blog_image2.jpg'
@@ -45,7 +44,6 @@ const blogs = [
 
 const BlogPage = () => {
     return (
-        <>
         <div className="blog-page">
             <div className="container section-title text-center" data-aos="fade-up">
                 <br /><br />
@@ -64,8 +62,6 @@ const BlogPage = () => {
                 ))}
             </div>
         </div>
-        <Footer />
-        </>
     );
 };
 

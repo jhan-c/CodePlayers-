@@ -1,9 +1,7 @@
 import React from 'react';
-import Footer from './Footer';
 
 const blog3 = () => {
     return (
-        <>
         <div className="blog-content">
             <h1>Choosing the Right ERP System for Your Business</h1>
             <p>
@@ -42,8 +40,6 @@ const blog3 = () => {
                 ERP solution that will drive efficiency and growth for your organization.
             </p>
         </div>
-        <Footer />
-        </>
     );
 };
 

@@ -26,11 +26,11 @@ import Clients from './Clients';
 import Features from './Features';
 import CircularProgressGroup from './CircularProgressGroup';
 import Frequently from './Frequently';
-import ServicesPage from './ServicesPage';
-import AboutUsPage from './AboutUsPage';
-import IntegrationsPage from './IntegrationsPage';
+import ServicesPage from './Services';
+import AboutUsPage from './AboutUs';
+import IntegrationsPage from './Integrations';
 import Footer from './Footer';
-import PricingPage from './PricingPage';
+import PricingPage from './Pricing';
 import Testimonials from './Testimonials';
 import Contact from "./Contact";
 import JobApplication from './JobApplicationForm';
@@ -74,7 +74,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/LoginPage" element={<Login />} />
-        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/Services" element={<ServicesPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/aboutus" element={<AboutUsPage />} />
         <Route path="/RequestDemoForm" element={<DemoRequestForm />} />
@@ -104,6 +104,7 @@ const App = () => {
         <Route path="/500" element={<InternalServerError />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

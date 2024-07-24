@@ -1,11 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 
 const LegalDisclosure = () => {
   return (
     <>
-    <Header />
     <br/><br/><br/><br/><br/>
     <div className="legal-disclosure container mt-4">
       <h1>Legal Disclosure</h1><hr/>
@@ -22,7 +19,6 @@ const LegalDisclosure = () => {
       </address>
     </div>
     <br/><br/><br/><br/><br/>
-    <Footer />
     </>
   );
 };

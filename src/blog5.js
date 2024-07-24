@@ -1,10 +1,8 @@
 import React from 'react';
-import Footer from './Footer';
 
 
 const blog5 = () => {
     return (
-        <>
         <div className="blog-content">
             <h1>ERP Implementation: Best Practices</h1>
             <p>
@@ -51,8 +49,6 @@ const blog5 = () => {
                 benefits to your business.
             </p>
         </div>
-        <Footer />
-        </>
     );
 };
 

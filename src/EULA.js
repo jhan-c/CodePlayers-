@@ -1,11 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 
 const EULA = () => {
   return (
     <>
-    <Header />
     <br/><br/><br/><br/><br/>
     <div className="eula container mt-4">
       <h1>End User License Agreement (EULA)</h1><hr/>
@@ -86,7 +83,6 @@ const EULA = () => {
       </p>
     </div>
     <br/><br/><br/><br/><br/>
-    <Footer />
     </>
   );
 };
