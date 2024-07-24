@@ -3099,6 +3099,10 @@ button:hover {
 
 /* For tablets and up */
 @media (max-width: 1024px) {
+  .TeamMember-container{
+    padding: 50px
+  }
+  
   .TeamMember-content {
     flex-direction: column;
     align-items: center;
@@ -3117,7 +3121,7 @@ button:hover {
 /* For mobile devices */
 @media (max-width: 768px) {
   .TeamMember-container {
-    padding: 10px;
+    padding: 50px;
   }
 
   .TeamMember-title {
