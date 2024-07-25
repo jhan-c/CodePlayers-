@@ -1,6 +1,6 @@
 import React from 'react';
 import './assets/vendor/bootstrap/css/bootstrap.min.css';
-import about7 from './assets/img/About/About7.jpg';
+import about7 from './assets/img/About/About9.png';
 
 
 const TeamMember = () => {

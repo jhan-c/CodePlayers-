@@ -15,12 +15,13 @@ import about3 from './assets/img/About/About3.jpg';
 import about4 from './assets/img/About/About4.jpg';
 import about5 from './assets/img/About/About5.jpg';
 import about6 from './assets/img/About/About6.jpg';
-import about7 from './assets/img/About/About7.jpg';
 import about71 from './assets/img/About/About8.jpg';
+import about72 from './assets/img/About/About9.png';
 import about8 from './assets/img/About1/5.jpg';
 import about9 from './assets/img/About1/3.jpg';
 import about11 from './assets/img/About1/7.jpg';
 import about12 from './assets/img/About1/6.png';
+
 
 // Import the team member detail components
 const ArpitAgrawal = '/ArpitAgrawal';
@@ -318,7 +319,7 @@ const AboutUs = () => {
         { name: 'MANISH AGRAWAL', role: 'Consultant: Application\'s Financial Structure', degree: 'FCA', img: about3 , link: ManishAgrawal},
         { name: 'HARSHIT GOEL', role: 'Consultant: Application\'s Development', degree: 'B-Tech (Computer Science)', img: about4 , link: HarshitGoel},
         { name: 'ADITI AGRAWAL', role: 'Consultant: Application\'s Development', degree: 'BE (Computer Science)', img: about5 , link: AditiAgrawal},
-        { name: 'ILESH THAKKAR', role: 'Consultant: Business Development, Implementation and Support', degree: 'Business Head', img: about7 , link: IleshThakkar},
+        { name: 'ILESH THAKKAR', role: 'Consultant: Business Development, Implementation and Support', degree: 'Business Head', img: about72 , link: IleshThakkar},
         { name: 'RITIKA AGRAWAL', role: 'Consultant: Product & structural design', degree: 'Design Head', img: about71 , link: RitikaAgrawal}
       ].map(({ name, role, degree, img, link }) => (
         <SwiperSlide key={name}>
