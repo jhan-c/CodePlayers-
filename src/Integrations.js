@@ -51,7 +51,7 @@ const FeaturesDetails = () => {
               <h3>Accounting Integrations</h3>
               <ul>
                 <li><i className="bi bi-check-circle"></i> <span>Push your vouchers into Tally as well as other accounting software with ease.</span></li>
-                <li><i className="bi bi-check-circle"></i> <span> Save time and eliminate manual errors. Easily collaborate with tax practitioners for return filing.</span></li>
+                <li><i className="bi bi-check-circle"></i> <span> Save time and eliminate manual errors. Easily collaborate with tax practitioners for return filing.</span></li>
               </ul>
             </div>
           </div>
@@ -77,39 +77,39 @@ const FeaturesDetails = () => {
         </div>
         {/* Features Item */}
         <div className="row gy-4 justify-content-between features-item align-items-center">
-          <div className="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <div className="content">
-              <h3>Payment Integrations</h3>
-              <ul>
-                <li><i className="bi bi-check-circle"></i> <span>Give your customers the freedom to pay online.</span></li>
-                <li><i className="bi bi-check-circle"></i> <span>Our ERP provides integrations with multiple leading online payment service providers.</span></li>
-                <li><i className="bi bi-check-circle"></i> <span>Accept online payments from the popular digital wallets without any hassles.</span></li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-lg-7 d-flex justify-content-end order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <div className="client d-flex flex-wrap justify-content-end">
-              <div className="clients-logo">
-                <img src={client1} className="img-fluid" alt="Client 1" />
-              </div>
-              <div className="clients-logo">
-                <img src={client2} className="img-fluid" alt="Client 2" />
-              </div>
-              <div className="clients-logo">
-                <img src={client3} className="img-fluid" alt="Client 3" />
-              </div>
-              <div className="clients-logo">
-                <img src={client4} className="img-fluid" alt="Client 4" />
-              </div>
-              <div className="clients-logo">
-                <img src={client5} className="img-fluid" alt="Client 5" />
-              </div>
-              <div className="clients-logo">
-                <img src={client6} className="img-fluid" alt="Client 6" />
-              </div>
-            </div>
-          </div>
+    <div className="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+      <div className="content">
+        <h3>Payment Integrations</h3>
+        <ul>
+          <li><i className="bi bi-check-circle"></i> <span>Give your customers the freedom to pay online.</span></li>
+          <li><i className="bi bi-check-circle"></i> <span>Our ERP provides integrations with multiple leading online payment service providers.</span></li>
+          <li><i className="bi bi-check-circle"></i> <span>Accept online payments from the popular digital wallets without any hassles.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div className="col-lg-7 d-flex justify-content-end order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+      <div className="client d-flex flex-wrap justify-content-end">
+        <div className="clients-logo">
+          <img src={client1} className="img-fluid" alt="Client 1" />
         </div>
+        <div className="clients-logo">
+          <img src={client2} className="img-fluid" alt="Client 2" />
+        </div>
+        <div className="clients-logo">
+          <img src={client3} className="img-fluid" alt="Client 3" />
+        </div>
+        <div className="clients-logo">
+          <img src={client4} className="img-fluid" alt="Client 4" />
+        </div>
+        <div className="clients-logo">
+          <img src={client5} className="img-fluid" alt="Client 5" />
+        </div>
+        <div className="clients-logo">
+          <img src={client6} className="img-fluid" alt="Client 6" />
+        </div>
+      </div>
+    </div>
+  </div>
         {/* Features Item */}
         <div className="row gy-4 justify-content-between features-item">
           <div className="col-lg-6 my-5" data-aos="fade-up" data-aos-delay="100"> 
@@ -161,4 +161,3 @@ const FeaturesDetails = () => {
 };
 
 export default FeaturesDetails;
-

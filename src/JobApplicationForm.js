@@ -56,7 +56,7 @@ const JobApplicationForm = () => {
               { name: 'O P Jindal University, Raigarh', img: col4 },
               { name: 'ITM University, Raipur', img: col1 },
               { name: 'Bhilai Institute of Technology, Durg', img: col2 },
-              { name: 'IHFE, HYD', img: col3 },
+              { name: 'IFHE, HYD', img: col3 },
             ].map(({ name, img }, index) => (
               <div
                 className="col-lg-6"

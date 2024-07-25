@@ -11,6 +11,11 @@ const brochures = [
         title: 'Infinity Fleet',
         link: '/Brochures/Infinity_Fleet.pdf'
     },
+    {
+        image: '/Brochures/sample bills and slips.jpg',
+        title: 'bills and slips',
+        link: '/Brochures/sample bills and slips.pdf'
+    },
 ];
 
 const BrochurePage = () => {

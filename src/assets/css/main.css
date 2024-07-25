@@ -1166,12 +1166,9 @@ section,
 .client {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 1px; 
-}
-
-.client {
+  justify-content: flex-end; /* Align to the end by default (desktop) */
   padding: 20px 0;
+  gap: 1px;
 }
 
 .client .clients-logo {
@@ -1186,7 +1183,7 @@ section,
   max-width: 100%;
   transition: 0.3s;
   opacity: 0.6;
-  filter: grayscale(100);
+  filter: grayscale(100%);
 }
 
 .client .clients-logo img:hover {
@@ -1194,9 +1191,18 @@ section,
   opacity: 1;
 }
 
-@media (max-width: 640px) {
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .client {
+    justify-content: center; /* Center align for mobile view */
+  }
+  
+  .clients-logo {
+    margin: auto; /* Center each logo individually */
+  }
+
   .client .clients-logo img {
-    padding: 20px;
+    padding: 20px; /* Adjust padding for mobile view */
   }
 }
 
