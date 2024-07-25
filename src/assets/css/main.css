@@ -718,7 +718,7 @@ input::placeholder {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: -15px;
+  bottom: 100px; /* Move the button higher to avoid overlapping */
   z-index: 99999;
   background-color: var(--accent-color);
   width: 44px;
@@ -741,7 +741,8 @@ input::placeholder {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 100px; /* Move the button higher to avoid overlapping */
+  right: 30px;
 }
 
 /*--------------------------------------------------------------

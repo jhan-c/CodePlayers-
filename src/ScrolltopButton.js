@@ -30,7 +30,7 @@ const ScrollTopButton = () => {
       className={`scroll-top d-flex align-items-center justify-content-center ${isVisible ? 'active' : ''}`}
       onClick={scrollToTop}
     >
-      <i class="bi bi-arrow-up-short"></i>
+      <i className="bi bi-arrow-up-short"></i>
     </button>
   );
 };
