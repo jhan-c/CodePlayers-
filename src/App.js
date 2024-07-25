@@ -43,6 +43,7 @@ import EULA from './EULA';
 import NotFound from './NotFound';
 import InternalServerError from './InternalServerError';
 import ClientsSection from './ClientsSection';
+import ScrollTopButton from './ScrolltopButton';
 import './App.css';
 
 // Import the team member detail components
@@ -79,6 +80,7 @@ const App = () => {
 
   return (
     <Router>
+      <ScrollTopButton />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
