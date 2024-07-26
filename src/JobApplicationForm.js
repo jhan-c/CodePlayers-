@@ -234,7 +234,9 @@ const JobApplicationForm = () => {
           {errors.captcha && <p>{errors.captcha.message}</p>}
         </div>
 
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <div class="btn-container">
+          <button type="submit" class="btn-getstarted">Submit</button>
+        </div>
       </form>
       <br /><br />
     </div>

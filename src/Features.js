@@ -40,7 +40,7 @@ const Features = () => {
                 >
                   <i className="bi bi-motherboard"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Streamlined Operations, Maximized Efficiency</h4>
+                    <h4 className="d-lg-block">Streamlined Operations, Maximized Efficiency</h4>
                     <p>
                       Integrate processes into one system, eliminating redundancies, boosting efficiency, reducing costs, and improving productivity.
                     </p>
@@ -55,7 +55,7 @@ const Features = () => {
                 >
                   <i className="bi bi-sliders2"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Seamless Integration</h4>
+                    <h4 className="d-lg-block">Seamless Integration</h4>
                     <p>
                       Our ERP systems integrate smoothly with your current software and hardware, minimizing operational disruption.
                     </p>
@@ -70,7 +70,7 @@ const Features = () => {
                 >
                   <i className="bi bi-file-bar-graph"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Real-Time Data for Better Decisions</h4>
+                    <h4 className="d-lg-block">Real-Time Data for Better Decisions</h4>
                     <p>
                       Access real-time data and analytics to make quick, informed decisions with accurate, up-to-date information.
                     </p>
@@ -85,7 +85,7 @@ const Features = () => {
                 >
                   <i className="bi bi-graph-up-arrow"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Scalable Solutions for Growth</h4>
+                    <h4 className="d-lg-block">Scalable Solutions for Growth</h4>
                     <p>
                       Our scalable ERP solutions adapt and expand with your business, supporting growth and new opportunities.
                     </p>
@@ -130,16 +130,16 @@ const Features = () => {
             </div>
           </div>
           <div className="col-lg-5 d-flex align-items-center">
-            <ul className="nav nav-tabs flex-column features-list" data-aos="fade-up" data-aos-delay="100">
+            <ul className="nav nav-tabs flex-column" data-aos="fade-up" data-aos-delay="100">
               <li className="nav-item">
                 <a
-                  className={`nav-link ${activeTab2 === 'features-tab-5' ? 'active show' : ''}`}
-                  onClick={() => handleTabClick2('features-tab-5')}
-                  data-bs-toggle="tab" href="#features-tab-5"
+                  className={`nav-link ${activeTab1 === 'features-tab-1' ? 'active show' : ''}`}
+                  onClick={() => handleTabClick1('features-tab-1')}
+                  data-bs-toggle="tab" href="#features-tab-1"
                 >
                   <i className="bi bi-cash-coin"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Proven ROI: Investing in Success</h4>
+                    <h4 className="d-lg-block">Proven ROI: Investing in Success</h4>
                     <p>
                       Investing in our ERP solutions ensures a clear return on investment by enhancing efficiency, reducing costs, and driving business growth.
                     </p>
@@ -148,13 +148,13 @@ const Features = () => {
               </li>
               <li className="nav-item">
                 <a
-                  className={`nav-link ${activeTab2 === 'features-tab-6' ? 'active show' : ''}`}
-                  onClick={() => handleTabClick2('features-tab-6')}
-                  data-bs-toggle="tab" href="#features-tab-6"
+                  className={`nav-link ${activeTab1 === 'features-tab-2' ? 'active show' : ''}`}
+                  onClick={() => handleTabClick1('features-tab-2')}
+                  data-bs-toggle="tab" href="#features-tab-2"
                 >
                   <i className="bi bi-clock"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">24/7 Support</h4>
+                    <h4 className="d-lg-block">24/7 Support</h4>
                     <p>
                       We offer 24/7 support to keep your ERP system running smoothly. Our dedicated team is always available to assist with any issues or questions.
                     </p>
@@ -163,13 +163,13 @@ const Features = () => {
               </li>
               <li className="nav-item">
                 <a
-                  className={`nav-link ${activeTab2 === 'features-tab-7' ? 'active show' : ''}`}
-                  onClick={() => handleTabClick2('features-tab-7')}
-                  data-bs-toggle="tab" href="#features-tab-7"
+                  className={`nav-link ${activeTab1 === 'features-tab-3' ? 'active show' : ''}`}
+                  onClick={() => handleTabClick1('features-tab-3')}
+                  data-bs-toggle="tab" href="#features-tab-3"
                 >
                   <i className="bi bi-shield-lock"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">Robust Security Features</h4>
+                    <h4 className="d-lg-block">Robust Security Features</h4>
                     <p>
                       Our ERP solutions ensure data protection with encryption, access controls, and regular audits.
                     </p>
@@ -178,13 +178,13 @@ const Features = () => {
               </li>
               <li className="nav-item">
                 <a
-                  className={`nav-link ${activeTab2 === 'features-tab-8' ? 'active show' : ''}`}
-                  onClick={() => handleTabClick2('features-tab-8')}
-                  data-bs-toggle="tab" href="#features-tab-8"
+                  className={`nav-link ${activeTab1 === 'features-tab-4' ? 'active show' : ''}`}
+                  onClick={() => handleTabClick1('features-tab-4')}
+                  data-bs-toggle="tab" href="#features-tab-4"
                 >
                   <i className="bi bi-hand-index"></i>
                   <div>
-                    <h4 className="d-none d-lg-block">User-Friendly Interface</h4>
+                    <h4 className="d-lg-block">Scalable Solutions for Growth</h4>
                     <p>
                       Our ERP systems offer intuitive designs for easy team adoption, minimizing training and maximizing productivity
                     </p>

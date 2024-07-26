@@ -84,7 +84,9 @@ const DemoRequestForm = () => {
                 {errors.referralSource && <p>{errors.referralSource.message}</p>}
               </div>
 
-              <button type="submit" className="btn-getstarted">Submit</button>
+              <div className="btn-container">
+                <button type="submit" className="btn-getstarted">Submit</button>
+              </div>
             </form>
           </div>
         </div>

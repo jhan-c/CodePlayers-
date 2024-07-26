@@ -695,7 +695,7 @@ input::placeholder {
   visibility: visible;
   opacity: 1;
   bottom: 85px;
-  right: 30px;
+  right: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1232,14 +1232,14 @@ section,
 }
 
 .features .nav-link h4 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin: 0 0 10px 0;
   transition: 0.3s;
 }
 
 .features .nav-link p {
-  font-size: 18px;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -1253,8 +1253,6 @@ section,
 
 .features .tab-pane img {
   border-radius: 15px;
-  height: 700px;
-  width: 700px;
 }
 
 @media (max-width: 1000px) {
@@ -1274,11 +1272,12 @@ section,
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px; /* Add some space between the image and features */
+    margin-right: 10px;
   }
 
   .features .nav-item {
     flex: 1 1 45%; /* Ensure each feature takes about 45% of the width */
-    margin: 10px; /* Add some margin around each feature */
+    margin: 0px;
   }
 }
 
@@ -1888,7 +1887,6 @@ section,
 --------------------------------------------------------------*/
 .job-application-container {
   padding: 50px 20px; /* Adjust padding to match pricing page */
-  text-align: center; /* Center align content */
   font: var(--default-font);
 }
 
@@ -1929,6 +1927,11 @@ section,
   align-items: center;
 }
 
+.job-application-form .btn-container {
+  display: flex;
+  justify-content: center;
+}
+
 .job-application-form .btn-getstarted {
   color: var(--contrast-color);
   background: var(--accent-color);
@@ -1938,7 +1941,7 @@ section,
   border-radius: 50px;
   transition: 0.3s;
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
   border: 0;
 }
 
@@ -1946,12 +1949,6 @@ section,
 .job-application-form .btn-getstarted:focus {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
-}
-
-.job-application-form p {
-  color: red;
-  font-size: 0.875em;
-  margin-top: 5px;
 }
 
 
@@ -2504,6 +2501,11 @@ section,
   border-color: #007bff;
 }
 
+.demo-request-container .btn-container{
+  display: flex;
+  justify-content: center;
+}
+
 .demo-request-container .btn-getstarted {
   color: var(--contrast-color);
   background: var(--accent-color);
@@ -2628,8 +2630,8 @@ section,
 /*Blog Content*/
 
 .blog-content {
-  max-width: 70%;
-  margin: 50px auto;
+  max-width: 1100px;
+  margin: 20px auto;
   margin-top: 100px;
   padding: 20px;
   background-color: #f9f9f9;
@@ -2641,7 +2643,7 @@ section,
 .blog-content p {
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #555;
+  color: var(--default-color);
   font-size: 1.2em;
 }
 
