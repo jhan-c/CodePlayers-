@@ -19,7 +19,7 @@ import about71 from './assets/img/About/About8.jpg';
 import about72 from './assets/img/About/About9.png';
 import about8 from './assets/img/About1/5.jpg';
 import about9 from './assets/img/About1/3.jpg';
-import about11 from './assets/img/About1/7.jpg';
+import about11 from './assets/img/About1/7.webp';
 import about12 from './assets/img/About1/6.png';
 
 
@@ -38,21 +38,23 @@ const AboutUs = () => {
     AOS.init();
   }, []);
 
-  return (
-    <div>
-      <section id="hero" className="hero section">
-        <div className="hero-bg">
-          <img src={about11} alt="background image" />
+return (
+<div>
+    <section id="hero" className="hero section">
+      <div className="hero-bg">
+        <img src={about11} alt="background image" />
+      </div>
+      <div className="container text-center">
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up">About</h1>
+          <h1 data-aos="fade-up"><span>Our ERP Software Company</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100">Learn more about our company and our dedicated team.</p>
         </div>
-        <div className="container section-title" data-aos="fade-up">
-          <br/><br/><br/>
-          <h2>About</h2>
-          <h1 data-aos="fade-up"><strong><span>Our ERP Software Company</span></strong></h1><br/>
-          <p  >Learn more about our company and our dedicated team.</p>
-          <br/><br/>
-        </div> 
-      </section>
-      
+      </div>
+    </section>
+
+
+
 <section id="about-us" className="about-us section">
 <section id="about-details" class="about-details section">
 <div class="container">
@@ -204,7 +206,7 @@ const AboutUs = () => {
   </div>
 </section>
 
-<section id="why-choose-us" className="section">
+<section id="why-choose-us" className="WhyChooseUs">
   <div className="container section-title" data-aos="fade-up">
     <h2>Why choose us</h2>
     <p>Streamline your operations and gain a competitive edge with our comprehensive ERP solutions.</p>
@@ -218,7 +220,7 @@ const AboutUs = () => {
         { icon: '📈', title: 'Results-Driven', description: 'We prioritize client success by delivering measurable results that enhance efficiency, cut costs, and boost revenue growth.' },
       ].map(({ icon, title, description }, index) => (
         <div className="col-lg-6" data-aos="fade-up" data-aos-delay={(index + 1) * 100} key={title}>
-          <div className="service-item1">
+          <div className="WhyChooseUsItem">
             <div className="icon1">
               <span >{icon}</span>
             </div>
@@ -282,11 +284,11 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <img src={about8} alt="Features" />
+            <img src={about8} alt="Features" className="img-fluid" />
           </div>
         </div>
       </div>
-    </section>
+</section>
 
  <section id="testimonials" className="testimonials section" style={{ background: '#f8f9fa' }}>
   <div className="container section-title" data-aos="fade-up">
