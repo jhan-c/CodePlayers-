@@ -133,9 +133,9 @@ const Features = () => {
             <ul className="nav nav-tabs flex-column" data-aos="fade-up" data-aos-delay="100">
               <li className="nav-item">
                 <a
-                  className={`nav-link ${activeTab1 === 'features-tab-1' ? 'active show' : ''}`}
-                  onClick={() => handleTabClick1('features-tab-1')}
-                  data-bs-toggle="tab" href="#features-tab-1"
+                  className={`nav-link ${activeTab2 === 'features-tab-5' ? 'active show' : ''}`}
+                  onClick={() => handleTabClick2('features-tab-5')}
+                  data-bs-toggle="tab" href="#features-tab-5"
                 >
                   <i className="bi bi-cash-coin"></i>
                   <div>
@@ -148,9 +148,9 @@ const Features = () => {
               </li>
               <li className="nav-item">
                 <a
-                  className={`nav-link ${activeTab1 === 'features-tab-2' ? 'active show' : ''}`}
-                  onClick={() => handleTabClick1('features-tab-2')}
-                  data-bs-toggle="tab" href="#features-tab-2"
+                  className={`nav-link ${activeTab2 === 'features-tab-6' ? 'active show' : ''}`}
+                  onClick={() => handleTabClick2('features-tab-6')}
+                  data-bs-toggle="tab" href="#features-tab-6"
                 >
                   <i className="bi bi-clock"></i>
                   <div>
@@ -163,9 +163,9 @@ const Features = () => {
               </li>
               <li className="nav-item">
                 <a
-                  className={`nav-link ${activeTab1 === 'features-tab-3' ? 'active show' : ''}`}
-                  onClick={() => handleTabClick1('features-tab-3')}
-                  data-bs-toggle="tab" href="#features-tab-3"
+                  className={`nav-link ${activeTab2 === 'features-tab-7' ? 'active show' : ''}`}
+                  onClick={() => handleTabClick2('features-tab-7')}
+                  data-bs-toggle="tab" href="#features-tab-7"
                 >
                   <i className="bi bi-shield-lock"></i>
                   <div>
@@ -178,15 +178,15 @@ const Features = () => {
               </li>
               <li className="nav-item">
                 <a
-                  className={`nav-link ${activeTab1 === 'features-tab-4' ? 'active show' : ''}`}
-                  onClick={() => handleTabClick1('features-tab-4')}
-                  data-bs-toggle="tab" href="#features-tab-4"
+                  className={`nav-link ${activeTab2 === 'features-tab-8' ? 'active show' : ''}`}
+                  onClick={() => handleTabClick2('features-tab-8')}
+                  data-bs-toggle="tab" href="#features-tab-8"
                 >
                   <i className="bi bi-hand-index"></i>
                   <div>
                     <h4 className="d-lg-block">Scalable Solutions for Growth</h4>
                     <p>
-                      Our ERP systems offer intuitive designs for easy team adoption, minimizing training and maximizing productivity
+                      Our ERP systems offer intuitive designs for easy team adoption, minimizing training and maximizing productivity.
                     </p>
                   </div>
                 </a>
