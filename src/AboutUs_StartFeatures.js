@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
-import image from './assets/img/About1/5.jpg';
+import image from './assets/img/About1/3.jpg';
 
 const StarFeatures = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init();
   }, []);
 
@@ -55,7 +56,7 @@ const StarFeatures = () => {
               </div>
             </div>
           </div>
-          <div className="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+          <div className="features-image col-lg-5 col-md-12 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
             <img src={image} alt="Features" className="img-fluid" />
           </div>
         </div>

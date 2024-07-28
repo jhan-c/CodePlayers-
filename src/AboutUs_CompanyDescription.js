@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 
-import image from './assets/img/About1/3.jpg';
+import image from './assets/img/About1/5.jpg';
 
 const CompanyDesciption = () => {
     useEffect(() => {
