@@ -27,7 +27,6 @@ import Features from './Features';
 import CircularProgressGroup from './CircularProgressGroup';
 import Frequently from './Frequently';
 import ServicesPage from './Services';
-import AboutUsPage from './AboutUs';
 import IntegrationsPage from './Integrations';
 import Footer from './Footer';
 import PricingPage from './Pricing';
@@ -45,6 +44,16 @@ import InternalServerError from './InternalServerError';
 import ClientsSection from './ClientsSection';
 import ScrollTopButton from './ScrolltopButton';
 import './App.css';
+
+import AboutUs_HeroSection from './AboutUs_HeroSection';
+import CompanyDesciption from './AboutUs_CompanyDescription';
+import OurMission from './AboutUs_OurMission';
+import OurStory from './AboutUs_OurStory';
+import ProjectTimeline from './AboutUs_ProjectTimeline';
+import OurVision from './AboutUs_OurVision';
+import WhyChooseUs from './AboutUs_WhyChooseUs';
+import StarFeatures from './AboutUs_StartFeatures';
+import Team from './AboutUs_Team';
 
 // Import the team member detail components
 import ArpitAgrawal from './ArpitAgrawal';
@@ -72,6 +81,22 @@ const Home = () => {
   );
 };
 
+const AboutUs = () => {
+  return (
+    <>
+      <AboutUs_HeroSection />
+      <CompanyDesciption />
+      <OurMission />
+      <OurStory />
+      <ProjectTimeline />
+      <OurVision />
+      <WhyChooseUs />
+      <StarFeatures />
+      <Team />
+    </>
+  );
+};
+
 const App = () => {
   useEffect(() => {
     AOS.init();
@@ -87,7 +112,6 @@ const App = () => {
         <Route path="/LoginPage" element={<Login />} />
         <Route path="/Services" element={<ServicesPage />} />
         <Route path="/pricing" element={<PricingPage />} />
-        <Route path="/aboutus" element={<AboutUsPage />} />
         <Route path="/RequestDemoForm" element={<DemoRequestForm />} />
         <Route path="/Integrations" element={<IntegrationsPage />} />
         <Route path="/JobApplicationForm" element={<JobApplication />} />
@@ -122,6 +146,7 @@ const App = () => {
         <Route path="/IleshThakkar" element={<IleshThakkar />} />
         <Route path="/RitikaAgrawal" element={<RitikaAgrawal />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
       </Routes>
       <Footer />
     </Router>
