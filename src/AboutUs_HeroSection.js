@@ -1,5 +1,5 @@
 import React from 'react';
-import background from "../src/assets/img/About1/7.webp";
+import background from "../src/assets/img/7.webp";
 
 function AboutUs_HeroSection() {
   return (
