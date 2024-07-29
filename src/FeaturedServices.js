@@ -9,7 +9,7 @@ function FeaturedServices() {
             <div className="service-item d-flex">
               <div className="icon flex-shrink-0"><i className="bi bi-briefcase"></i></div>
               <div>
-                <h4 className="title"><a href="#" className="stretched-link">Ease of use</a></h4>
+                <h4 className="title"><a className="stretched-link">Ease of use</a></h4>
                 <p className="description">"Ease of use" is our first motto</p>
               </div>
             </div>
@@ -18,7 +18,7 @@ function FeaturedServices() {
             <div className="service-item d-flex">
               <div className="icon flex-shrink-0"><i className="bi bi-laptop"></i></div>
               <div>
-                <h4 className="title"><a href="#" className="stretched-link">Utilize Hardware Potential</a></h4>
+                <h4 className="title"><a className="stretched-link">Utilize Hardware Potential</a></h4>
                 <p className="description">Newest OS ready..</p>
               </div>
             </div>
@@ -27,7 +27,7 @@ function FeaturedServices() {
             <div className="service-item d-flex">
               <div className="icon flex-shrink-0"><i className="bi bi-database-check"></i></div>
               <div>
-                <h4 className="title"><a href="#" className="stretched-link">Large Scale Database</a></h4>
+                <h4 className="title"><a className="stretched-link">Large Scale Database</a></h4>
                 <p className="description">Supports big data.</p>
               </div>
             </div>
@@ -36,7 +36,7 @@ function FeaturedServices() {
             <div className="service-item d-flex">
               <div className="icon flex-shrink-0"><i className="bi bi-person-gear"></i></div>
               <div>
-                <h4 className="title"><a href="#" className="stretched-link">Highly Customizable</a></h4>
+                <h4 className="title"><a className="stretched-link">Highly Customizable</a></h4>
                 <p className="description">Tailor to fit your needs.</p>
               </div>
             </div>
@@ -45,7 +45,7 @@ function FeaturedServices() {
             <div className="service-item d-flex">
               <div className="icon flex-shrink-0"><i className="bi bi-window-stack"></i></div>
               <div>
-                <h4 className="title"><a href="#" className="stretched-link">APIs Integration</a></h4>
+                <h4 className="title"><a className="stretched-link">APIs Integration</a></h4>
                 <p className="description">Connect with third-party apps.</p>
               </div>
             </div>
@@ -54,7 +54,7 @@ function FeaturedServices() {
             <div className="service-item d-flex">
               <div className="icon flex-shrink-0"><i className="bi bi-whatsapp"></i></div>
               <div>
-                <h4 className="title"><a href="#" className="stretched-link">WhatsApp Integration</a></h4>
+                <h4 className="title"><a className="stretched-link">WhatsApp Integration</a></h4>
                 <p className="description">Improve communication.</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ function FeaturedServices() {
             <div className="service-item d-flex">
               <div className="icon flex-shrink-0"><i className="bi bi-laptop"></i></div>
               <div>
-                <h4 className="title"><a href="#" className="stretched-link">Auto Master Creation</a></h4>
+                <h4 className="title"><a className="stretched-link">Auto Master Creation</a></h4>
                 <p className="description">Generate master records.</p>
               </div>
             </div>
@@ -72,7 +72,7 @@ function FeaturedServices() {
             <div className="service-item d-flex">
               <div className="icon flex-shrink-0"><i className="bi bi-cash-coin"></i></div>
               <div>
-                <h4 className="title"><a href="#" className="stretched-link">Auto GST Reconciliation</a></h4>
+                <h4 className="title"><a className="stretched-link">Auto GST Reconciliation</a></h4>
                 <p className="description">Automate GST filing.</p>
               </div>
             </div>

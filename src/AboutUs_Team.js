@@ -40,7 +40,7 @@ return (
  <section id="testimonials" className="testimonials section" style={{ background: '#f8f9fa' }}>
   <div className="container section-title" data-aos="fade-up">
     <h2>Meet</h2>
-    <h3><a href="#" className='stretched-link'>Our Team</a></h3>
+    <h3><a className='stretched-link'>Our Team</a></h3>
   </div>
   <div className="container" data-aos="fade-up" data-aos-delay="100">
     <Swiper

@@ -1255,6 +1255,10 @@ section,
   border-radius: 15px;
 }
 
+.features .justify-content-between{
+  margin-top: 50px;
+}
+
 @media (max-width: 1000px) {
   .features .img-fluid {
     width: 100%; /* Ensure images take full width */
@@ -1272,12 +1276,15 @@ section,
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px; /* Add some space between the image and features */
-    margin-right: 10px;
   }
 
   .features .nav-item {
     flex: 1 1 45%; /* Ensure each feature takes about 45% of the width */
     margin: 0px;
+  }
+
+  .features .justify-content-between{
+    margin-top: 10px;
   }
 }
 
@@ -1305,6 +1312,7 @@ section,
   position: relative;
   width: 150px;
   height: 150px;
+  text-align: center;
 }
 
 .circular-progress svg {
@@ -1366,7 +1374,6 @@ section,
     height: 100px;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Services Page CSS
@@ -2987,5 +2994,3 @@ button:hover {
     font-size: 0.9rem;
   }
 }
-
-

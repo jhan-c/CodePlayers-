@@ -112,7 +112,7 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="row justify-content-between mt-5">
+        <div className="row justify-content-between">
           <div className="col-lg-6 my-4">
             <div className="tab-content" data-aos="fade-up" data-aos-delay="200">
               <div className={`tab-pane fade ${activeTab2 === 'features-tab-5' ? 'active show' : ''}`} id="features-tab-5">

@@ -13,7 +13,7 @@ function OurMission() {
         <div className="service-item d-flex">
           <div className="icon flex-shrink-0"><i className="bi bi-briefcase"></i></div>
           <div>
-            <h4 className="title"><a href="#" className="stretched-link">Empower Businesses</a></h4>
+            <h4 className="title"><a className="stretched-link">Empower Businesses</a></h4>
             <p className="description">"Empower Businesses" is our first motto</p>
           </div>
         </div>
@@ -22,7 +22,7 @@ function OurMission() {
         <div className="service-item d-flex">
           <div className="icon flex-shrink-0"><i className="bi bi-card-checklist"></i></div>
           <div>
-            <h4 className="title"><a href="#" className="stretched-link">Increase Efficiency</a></h4>
+            <h4 className="title"><a className="stretched-link">Increase Efficiency</a></h4>
             <p className="description">Increase Efficiency through our services</p>
           </div>
         </div>
@@ -31,7 +31,7 @@ function OurMission() {
         <div className="service-item d-flex">
           <div className="icon flex-shrink-0"><i className="bi bi-bar-chart"></i></div>
           <div>
-            <h4 className="title"><a href="#" className="stretched-link">Drive Innovation</a></h4>
+            <h4 className="title"><a className="stretched-link">Drive Innovation</a></h4>
             <p className="description">Drive Innovation with our solutions</p>
           </div>
         </div>

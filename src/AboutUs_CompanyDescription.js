@@ -18,7 +18,7 @@ return (
 
             <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="content">
-                    <h3><a href="/AboutUs" className="stretched-link">We don’t hide, we stand tall in front of challenge!</a></h3>
+                    <h3><a className="stretched-link">We don’t hide, we stand tall in front of challenge!</a></h3>
                     <p>
                     We give 100% assurance for providing efficient solutions to any problems or complaints you face with any of our products.
                     Any suitable suggestions regarding product alteration and simplification are always welcome.<br /><br />

@@ -83,7 +83,7 @@ const JobApplicationForm = () => {
 
         <div className="container" data-aos="fade-up" data-aos-delay="200">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Completion Certificate & Letters of Appreciation</h2>
+          <h2>Completion Certificate & Letter of Appreciation</h2>
         </div>
         <br/><br/>
         <div className="d-flex flex-column gy-4">
