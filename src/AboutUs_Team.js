@@ -62,12 +62,12 @@ return (
       }}
     >
       {[
-        { name: 'ARPIT AGRAWAL', role: 'Consultant: Business Development', degree: 'M.Tech (IIT Kharagpur)', img: about6 , link: ArpitAgrawal },
         { name: 'UTKARSH AGRAWAL', role: 'Director: Development & Implementation', degree: 'Founder & CEO', img: about1 , link: UtkarshAgrawal},
         { name: 'MANAS AGRAWAL', role: 'Director: Sales', degree: 'Co-Founder', img: about2 , link: ManasAgrawal},
         { name: 'MANISH AGRAWAL', role: 'Consultant: Application\'s Financial Structure', degree: 'FCA', img: about3 , link: ManishAgrawal},
         { name: 'HARSHIT GOEL', role: 'Consultant: Application\'s Development', degree: 'B-Tech (Computer Science)', img: about4 , link: HarshitGoel},
         { name: 'ADITI AGRAWAL', role: 'Consultant: Application\'s Development', degree: 'BE (Computer Science)', img: about5 , link: AditiAgrawal},
+        { name: 'ARPIT AGRAWAL', role: 'Consultant: Business Development', degree: 'M.Tech (IIT Kharagpur)', img: about6 , link: ArpitAgrawal },
         { name: 'ILESH THAKKAR', role: 'Consultant: Business Development, Implementation and Support', degree: 'Business Head', img: about8 , link: IleshThakkar},
         { name: 'RITIKA AGRAWAL', role: 'Consultant: Product & structural design', degree: 'Design Head', img: about7 , link: RitikaAgrawal}
       ].map(({ name, role, degree, img, link }) => (
