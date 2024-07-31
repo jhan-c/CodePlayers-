@@ -2283,7 +2283,7 @@ section,
 }
 
 .timeline-item .timeline-content h4{
-  font-size: clamp(9px, 5vw, 25px);
+  font-size: clamp(2px, 3vw, 25px);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
