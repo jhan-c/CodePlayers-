@@ -2216,7 +2216,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# About Us Section - flowchart
+# About Us Section - project timeline 
 --------------------------------------------------------------*/
 .timeline {
   position: relative;
@@ -2259,7 +2259,7 @@ section,
   text-align: center;
   line-height: 30px; /* Adjust line-height */
   color: #fff;
-  font-size: 16px; /* Reduce font size */
+  font-size: auto;
   font-weight: bold;
 }
 
@@ -2270,6 +2270,20 @@ section,
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item .timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 15px; /* Reduce padding */
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: clamp(12px, 2vw, 18px); /* Adjust font size dynamically */
+}
+
+.timeline-item .timeline-content h4{
+  font-size: clamp(9px, 5vw, 25px);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
@@ -2284,7 +2298,7 @@ section,
 
 .timeline-item .timeline-content h4 {
   margin-top: 0;
-  color: #388da8;
+  color: var(--accent-color);
   text-align: center;
 }
 
