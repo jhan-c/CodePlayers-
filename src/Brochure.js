@@ -1,28 +1,34 @@
 import React from 'react';
+import InfinityERPImage from './assets/img/Brochures/Infinity_ERP.png';
+import InfinityFleetImage from './assets/img/Brochures/Infinity_Fleet.png';
+import BillsAndSlipsImage from './assets/img/Brochures/sample bills and slips.jpg';
+import InfinityERPpdf from './assets/img/Brochures/Infinity_ERP.pdf';
+import InfinityFleetpdf from './assets/img/Brochures/Infinity_Fleet.pdf';
+import BillsAndSlipspdf from './assets/img/Brochures/sample_bills_and_slips.pdf';
 
 const brochures = [
     {
-        image: '/Brochures/Infinity_ERP.png',
+        image: InfinityERPImage,
         title: 'Infinity ERP',
-        link: '/Brochures/Infinity_ERP Brochure.pdf'
+        link: InfinityERPpdf
     },
     {
-        image: '/Brochures/Infinity_Fleet.png',
+        image: InfinityFleetImage,
         title: 'Infinity Fleet',
-        link: '/Brochures/Infinity_Fleet.pdf'
+        link: InfinityFleetpdf
     },
     {
-        image: '/Brochures/sample bills and slips.jpg',
+        image: BillsAndSlipsImage,
         title: 'bills and slips',
-        link: '/Brochures/sample bills and slips.pdf'
+        link: BillsAndSlipspdf
     },
 ];
 
 const BrochurePage = () => {
     return (
         <div className="brochure-page">
-          <br/><br/>
-          <br/>
+            <br/><br/>
+            <br/>
             <div className="container section-title text-center" data-aos="fade-up">
                 <h2>Brochures</h2>
                 <p>Codeplayers Brochures</p>
