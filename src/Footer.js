@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
             <div className="social-links d-flex mt-4">
               <a href="https://x.com/Codeplayers_in"><i className="bi bi-twitter-x"></i></a>
-              <a href="/"><i className="bi bi-facebook"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61563402103143&mibextid=ZbWKwL"><i className="bi bi-facebook"></i></a>
               <a href="https://www.instagram.com/codeplayers.in/"><i className="bi bi-instagram"></i></a>
               <a href="https://www.linkedin.com/company/codeplayers-business-system-private-limited/"><i className="bi bi-linkedin"></i></a>
               <a href="https://www.youtube.com/@CODEPLAYERSINFINITY"><i className="bi bi-youtube"></i></a>

@@ -24,7 +24,6 @@ import TrainingVideos from './TrainingVideos';
 import Brochure from './Brochure';
 import Clients from './Clients';
 import Features from './Features';
-import CircularProgressGroup from './CircularProgressGroup';
 import Frequently from './Frequently';
 import ServicesPage from './Services';
 import IntegrationsPage from './Integrations';
@@ -73,7 +72,6 @@ const Home = () => {
       <About />
       <Clients />
       <Features />
-      <CircularProgressGroup />
       <Frequently />
       <Testimonials />
       <Contact />

@@ -15,7 +15,7 @@ function HeroSection() {
           <p data-aos="fade-up" data-aos-delay="100">Choose a powerful ERP for your Enterprise</p>
           <div className="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="./RequestDemoForm" className="btn-get-started">Request a demo</a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <a href="https://youtu.be/rhCQjqgtzks?si=PCSh9XerzD4kXfMO" className="glightbox btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
       </div>
